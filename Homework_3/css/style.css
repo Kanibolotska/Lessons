@@ -1,0 +1,33 @@
+*{
+	color: rgba(26, 24, 24, 0.698);
+}
+p {
+	color: royalblue;
+}
+.title {
+	color: rgb(39, 143, 108);
+}
+#concluded {
+	color: rgb(155, 55, 152);
+}
+	[class*= "subtitle"] {
+		color: rgb(224, 31, 31);
+	}
+
+p.avtor {
+	color: rgb(255, 10, 218);
+}
+.infa.info {
+	color: rgb(45, 255, 41);
+}	
+
+.list li {
+	color: rgb(42, 196, 170);
+}
+.infa,
+.info {
+	color: rgb(167, 201, 79);
+}
+.list > li:first-child {
+	color: rgb(255, 0, 0);
+}
