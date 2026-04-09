@@ -1,0 +1,294 @@
+/* @import url(https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic);*/
+
+body {
+	font-family: "playfair display", serif;
+	font-size: 18px;
+}
+
+h1 {
+	font-family: "InterDisplay";
+	font-style: italic;
+	font-weight: 700;
+	font-size: 25px;
+	color: rgb(158, 112, 56);
+	text-align: center;
+	text-decoration: underline;
+	text-decoration-style: wavy;
+	text-decoration-thickness: 10px;
+	text-underline-offset: 20px;
+	text-transform: uppercase;
+	line-height: 3.1;
+}
+h2 {
+	margin-top: 40px;
+}
+
+.title {
+	margin-bottom: 20px;
+	font-weight: 600;
+	text-indent: 10px;
+}
+
+
+#dm-sans {
+	font-family: "DM Sans", sans-serif;
+}
+#inter-display {
+	font-family: "Inter Display", sans-serif;
+}
+#poppins {
+	font-family: "Poppins", sans-serif;
+}	
+#normal {
+	margin-bottom: 10px;
+}
+#italic {
+	font-style: italic;
+	margin-bottom: 10px;
+}
+#oblique {
+	font-style: oblique;
+	margin-bottom: 10px;
+}
+
+
+
+.fonts-block {
+	font-family: "Poppins", sans-serif;
+}
+.text {
+	text-indent: 20px;
+}
+.normal-weight {
+	font-weight: normal;
+}
+.bold {
+	font-weight: bold;
+}
+.bolder {
+	font-weight: bolder;
+}
+.lighter {
+	font-weight: lighter;
+}
+.weight-100 {
+	font-weight: 100;
+}
+.weight-200 {
+	font-weight: 200;
+}
+.weight-300 {
+	font-weight: 300;	
+}
+.weight-400 {
+	font-weight: 400;
+}
+.weight-500 {
+	font-weight: 500;
+}
+.weight-600 {
+	font-weight: 600;
+}
+.weight-700 {
+	font-weight: 700;
+}
+.weight-800 {
+	font-weight: 800;
+}
+.weight-900 {
+	font-weight: 900;
+}
+
+
+.serif {
+	font-family: serif;
+}
+.sans-serif {
+	font-family: sans-serif;
+}
+.cursive {
+	font-family: cursive;
+}
+.fantasy {
+	font-family: fantasy;
+}
+.monospace {
+	font-family: monospace;
+}
+
+
+
+
+.align-left {text-align: left;
+}
+.align-right {
+	text-align: right;
+}
+.align-center {
+	text-align: center;
+}
+.align-justify {
+	text-align: justify;
+}
+
+.title {
+	color: rgb(118, 201, 222);
+}
+
+
+.properties {
+	margin-bottom: 20px;
+	color: salmon;
+}
+.properties > ul li {
+	color: black;
+}
+
+
+.decoration-underline {
+	text-decoration: underline;
+	margin-bottom: 20px;
+}
+.decoration-overline {
+	text-decoration: overline;
+}
+.decoration-line-through {
+	text-decoration: line-through;
+}
+.decoration-none {
+	text-decoration: none;
+}
+
+
+
+.transform-uppercase {
+	text-transform: uppercase;
+}
+.transform-lowercase {
+	text-transform: lowercase;
+}
+.transform-capitalize {
+	text-transform: capitalize;
+}
+.transform-none {
+	text-transform: none;
+}
+
+
+
+.decoration-color {
+	text-decoration: underline;
+	text-decoration-color: rgb(144, 13, 13);
+}
+.decoration-solid {
+	text-decoration: underline;
+	text-decoration-style: solid;
+
+}
+.decoration-dashed {
+	text-decoration: underline;
+	text-decoration-style: dashed;
+}
+.decoration-dotted {
+	text-decoration: underline;
+	text-decoration-style: dotted;
+}
+.decoration-wavy {
+	text-decoration: underline;
+	text-decoration-style: wavy;
+}
+.decoration-double {
+	text-decoration: underline;
+	text-decoration-style: double;
+}
+
+.decoration-thickness {
+	text-decoration: underline;
+	text-decoration-thickness: 5px;
+}
+.underline-offset {
+	text-decoration: underline;
+	text-underline-offset: 5px;
+}
+
+.text-shadow-one {
+	margin-bottom: 10px;
+	font-size: 30px;
+	text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.text-shadow-two {
+	margin-bottom: 10px;
+	font-size: 30px;
+	text-shadow:
+		3px 3px 3px rgba(0, 0, 0, 0.5),
+		-10px -10px 3px green;
+}
+.text-shadow-three {
+	margin-bottom: 10px;
+	font-size: 30px;
+	text-shadow:
+		3px 3px 3px rgba(0, 0, 0, 0.5),
+		5px 10px 4px green,
+		-5px -8px 2px red;
+}
+
+
+.transform-uppercase {
+	text-transform: uppercase;
+}
+.transform-lowercase {
+	text-transform: lowercase;
+}
+.transform-capitalize {
+	text-transform: capitalize;
+}
+.transform-none {
+	text-transform: none;
+}
+
+
+
+.letter-spacing {
+	letter-spacing: 5px;
+}
+.word-spacing {
+	word-spacing: 5px;
+
+}
+.white-space-normal {
+	white-space: normal;
+}
+.white-space-nowrap {
+	white-space: nowrap;
+}
+
+.agrolink {
+	margin-top: 40px;
+	font-family: "DM Sans", sans-serif;
+	font-size: 50px;
+	color: #131313;
+	font-weight: 400;
+}
+.agrolink-title span {
+	line-height: 1.26;
+	color: #1AAF5B;
+	font-weight: 700;
+}
+.agrolink-text {	
+	color: hsla(0, 0%, 0%, 0.5) ;
+	font-size: 20px;
+	line-height: 1.4;
+}
+
+.footer {
+	margin-top: 40px;
+	font-family: "DM Sans", sans-serif;
+	font-size: 30px;
+	color: hsla(280, 65%, 55%, 0.399);
+	font-weight: 400;
+	text-align: center;
+	text-decoration: underline;
+	text-decoration-color: hsla(280, 95%, 53%, 0.657);
+	text-shadow: #eeaeae 5px 5px 10px;
+}
