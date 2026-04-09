@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Playfair%20Display:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=DM%20Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Homework_4</title>
+</head>
+
+<body>
+	<header id="Top">
+		<h1>Підключення шрифтів, CSS властивості шрифтів та тексту</h1>
+	</header>
+	<main>
+		<h2 class="title">Шрифти в файлі</h2>
+		<ul>
+			<li id="playfair">Це прописано шрифтом Playfair Display. Стоїть за замовченням</li>
+			<li id="dm-sans">Це прописано шрифтом DM Sans</li>
+			<li id="inter-display">Це прописано шрифтом Inter Display</li>
+			<li id="poppins">Це прописано шрифтом Poppins</li>
+		</ul>
+		<h2 class="title">Стилі шрифтів</h2>
+		<ul>
+			<li id="normal"><mark>normal</mark> (за замовчуванням) - звичайний (не змінений, стандартний) стиль</li>
+			<li id="italic"><mark>italic</mark> - курсив</li>
+			<li id="oblique"><mark>oblique</mark> - нахилення літер</li>
+		</ul>
+		<div class="fonts-block">
+			<h2 class="title">Практикуємо насиченість (товщину, вагу) шрифту</h2>
+			<ul>
+				<li class="text normal-weight">font-weight: normal;</li>
+				<li class="text bold">font-weight: bold;</li>
+				<li class="text bolder">font-weight: bolder;</li>
+				<li class="text lighter">font-weight: lighter;</li>
+				<li class="text weight-100">font-weight: 100 - Thin (Hairline)</li>
+				<li class="text weight-200">font-weight: 200 - Extra Light (Ultra Light)</li>
+				<li class="text weight-300">font-weight: 300 - Light </li>
+				<li class="text weight-400">font-weight: 400 - Regular (Normal) </li>
+				<li class="text weight-500">font-weight: 500 - Medium </li>
+				<li class="text weight-600">font-weight: 600 - Semi Bold (Demi Bold)</li>
+				<li class="text weight-700">font-weight: 700 - Bold </li>
+				<li class="text weight-800">font-weight: 800 - Extra Bold (Ultra Bold)</li>
+				<li class="text weight-900">font-weight: 900 - Black (Heavy)</li>
+			</ul>
+		</div>
+		<h2 class="title">Типи шрифтів</h2>
+		<ul>
+			<li class="text serif">Serif - шрифт з зарубками</li>
+			<li class="text sans-serif">Sans-serif - шрифт без зарубок</li>
+			<li class="text cursive">Cursive - рукописний шрифт</li>
+			<li class="text fantasy">Fantasy - декоративний шрифт</li>
+			<li class="text monospace">Monospace - моноширинний шрифт</li>
+		</ul>
+		<!-- Для себе, як нотатка -->
+		<h2 class="title">Відступи тексту</h2>
+		<ul>
+			<li class="text">text-indent - відступ першого рядка абзацу</li>
+			<li class="text">line-height - міжрядковий інтервал</li>
+			<li class="text">letter-spacing - інтервал між літерами</li>
+			<li class="text">word-spacing - інтервал між словами</li>
+			<li class="text">margin-top — відступ зверху</li>
+			<li class="text">margin-right — відступ справа</li>
+			<li class="text">margin-bottom — відступ знизу.</li>
+			<li class="text">margin-left — відступ зліва.</li>
+			<li class="text eline-height">line-height - Визначає висоту рядка. Пишемо в форматі десятих (1.2) і тд. Ділимо
+				розмір шрифта на значення line-height. Запрактикувала на загаловку</li>
+			<li class="text letter-spacing">letter-spacing - інтервал між літерами</li>
+			<li class="text word-spacing">word-spacing - інтервал між словами</li>
+			<li class="text white-space">white-space - керує поведінкою пробілів між словами
+				<ul>
+					<li class="text white-space-normal">normal (за замовчуванням) - пробіли між словами зберігаються, але
+						послідовні пробіли зводяться до одного.</li>
+					<li class="text white-space-nowrap">nowrap - текст не переноситься на новий рядок, навіть якщо він
+						виходить за межі контейнера. Пробіли між словами зберігаються, але послідовні пробіли зводяться до
+						одного.</li>
+				</ul>
+			</li>
+		</ul>
+		<h2 class="title">Властивості тексту</h2>
+		<ul>
+			<li class="text properties">Вирівнювання тексту: <mark>text-align</mark>: left (за замовчуванням), right,
+				center,justify
+				<ul>
+					<li class="text align-left">left: вирівнює текст по лівому краю (за замовчуванням для ліво-направлених
+						мов).</li>
+					<li class="text align-right">right: вирівнює текст по правому краю.</li>
+					<li class="text align-center">center: вирівнює текст по центру.</li>
+					<li class="text align-justify">justify: вирівнює текст по ширині об'єкту.</li>
+				</ul>
+			</li>
+			<li class="text properties">Декорування тексту. Властивість <mark>text-decoration</mark> дозволяє додавати
+				різні декоративні ефекти до тексту, такі як підкреслення, надкреслення, перекреслення та інші. Основні
+				значення цієї властивості включають:
+				<ul>
+					<li class="text decoration-underline">underline: підкреслює текст.</li>
+					<li class="text decoration-overline">overline: додає лінію над текстом.</li>
+					<li class="text decoration-line-through">line-through: перекреслює текст.</li>
+					<li class="text decoration-none">none: видаляє всі декоративні ефекти з тексту (за замовчуванням).
+					</li>
+				</ul>
+			</li>
+			<li class="text properties">Трансформація тексту</li>
+			<ul>
+				<li class="text transform-uppercase">uppercase: перетворює всі літери в тексті на великі.</li>
+				<li class="text transform-lowercase">lowercase: перетворює всі літери в тексті на малі.</li>
+				<li class="text transform-capitalize">capitalize: перетворює першу літеру кожного слова в тексті на
+					велику, а всі інші - на малі.</li>
+				<li class="text transform-none">none: зберігає текст без змін (за замовчуванням).</li>
+			</ul>
+		</ul>
+		<h2 class="title">Декорування ліній</h2>
+		<ul>
+			<li class="text decoration-color">text-decoration-color - змінює колір лінії</li>
+			<li class="text decoration-style">text-decoration-style - змінює стиль лінії
+				<ul>
+					<li class="text decoration-solid">solid: суцільна лінія</li>
+					<li class="text decoration-dashed">dashed: штрихова лінія</li>
+					<li class="text decoration-dotted">dotted: пунктирна лінія</li>
+					<li class="text decoration-wavy">wavy: хвилиста лінія</li>
+					<li class="text decoration-double">double: подвійна лінія</li>
+				</ul>
+			</li>
+			<li class="text decoration-thickness">text-decoration-thickness - встановлює товщину лінії</li>
+			<li class="text underline-offset">text-underline-offset - встановлює відстань від тексту до лінії</li>
+		</ul>
+		<h2 class="title">Тінь тексту. text-shadow - додає тінь до тексту.text-shadow: горизонтальне_зміщення
+			вертикальне_зміщення розмір колір</h2>
+		<ul>
+			<li class="text text-shadow-one">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+			<li class="text text-shadow-two">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+			<li class="text text-shadow-three">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+		</ul>
+		<h2 class="title">text-transform - Встановлює тип (регістр) літер (прописні або заглавні)</h2>
+		<ul>
+			<li class="text transform-uppercase">uppercase: перетворює всі літери в тексті на великі.</li>
+			<li class="text transform-lowercase">lowercase: перетворює всі літери в тексті на малі.</li>
+			<li class="text transform-capitalize">capitalize: перетворює першу літеру кожного слова в тексті на велику, а
+				всі інші - на малі.</li>
+			<li class="text transform-none">none: зберігає текст без змін (за замовчуванням).</li>
+		</ul>
+		<div class="agrolink">
+			<div class="agrolink-title">Grown <span>by Nature</span></div>
+			<div class="agrolink-text">We grow our crops naturally. We are a fast-growing <br>agricultural technology
+				company passionate about <br>ensuring food security. We leverage our technology <br>to improve productivity
+				& sales to promote <br>food security for you and your family.</div>
+		</div>
+	</main>
+	<footer>
+		<div class="footer">
+			<a href="#Top">The end</a>
+		</div>
+	</footer>
+</body>
+
+</html>
