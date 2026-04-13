@@ -1,0 +1,363 @@
+
+body {
+	font-family: "Poppins", sans-serif;
+	background-color: rgb(150, 144, 136);
+}
+h1 {
+	font-family: "DM Sans", sans-serif;
+	font-weight: 800;
+	text-align: center;
+	margin-bottom: 50px;
+	text-transform: uppercase;
+	font-size: 35px;
+	text-shadow: 5px 5px 1px rgba(255, 0, 0, 0.3);
+}
+
+.title {
+	font-family: "InterDisplay", sans-serif;
+	font-weight: 600;
+	font-size: 25px;
+	margin-bottom: 10px;
+	color: aqua;
+	text-align: center;
+	text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5), -4px -4px 5px rgba(78, 5, 5, 0.5);
+
+}
+
+/* --------------- CSS-властивості блоків ----------------- */
+/* Відступи */
+/* Відступи неочікувано працюють для рядкових об'єктів */
+/* Відступи прийнято задавати для батьківського об'єкту */
+
+/*
+padding - Внутрішній відступ. 
+Відступи (відстань) ВСЕРЕДЕНІ об'єкту. 
+Від кордонів об'єкту ДО ЙОГО КОНТЕНТУ
+НЕ успадковується
+
+Анатомія значення відступів:
+- Цифрове значення + одиниця виміру (10px, 50%... і т.д.)
+- Не може бути від'ємним
+- При вказанні значення у відсотках
+відсоток береться від ШИРИНИ батьківського об'єкту,
+навіть для вертикальних відступів 
+
+padding: з_усіх_сторін;
+padding (Якщо два значення): зверху_знизу зправа_зліва;
+padding (Якщо три значення): зверху зправа_зліва знизу;
+padding (Якщо чотири значення): зверху зправа знизу зліва;
+(годинникова стрілка)
+
+Окремі padding:
+padding-top: значення;
+padding-right: значення;
+padding-bottom: значення;
+padding-left: значення;
+*/
+.block-container1 {
+   background-color: #4f4fc288;
+	padding: 10px 50px 20px 30px; 
+}
+.block-title1 {
+   background-color: #1e1e548b; /* Темніший фон суто для тексту */
+   padding: 30px; /* padding: зверху зправа знизу зліва; */
+}
+.block-container2 {
+	background-color: #471d1388;
+	padding: 3%;
+}
+.block-title2 {
+   background-color: #471d1388; /* Темніший фон суто для тексту */
+   padding: 2% 3%; /* padding: зверху зправа знизу зліва; */
+}
+
+
+/*
+margin - Зовнішній відступ.
+Відступи ЗОВНІ об'єкту до інших об'єктів. 
+НЕ успадковується
+
+Особливості:
+- Значення можуть бути від'ємними!
+- Спрацьовує ефект "схлопування" 
+	(накладання, колапс, згортання)
+
+margin: з_усіх_сторін;
+margin: зверхуз_низу зправа_зліва;
+margin: зверху зправа_зліва знизу;
+margin: зверху зправа знизу зліва;
+
+margin-top: значення;
+margin-right: значення;
+margin-bottom: значення;
+margin-left: значення;
+*/
+.block-container1 {
+	margin-bottom: 20px;
+}
+
+.block-container2 {
+	margin-bottom: 3%;
+}
+
+/*
+Ефект "схлопування" 
+(накладання, колапс, згортання) margin.
+Виникає коли зовнішній відступ 
+заданий сусіднім об'єктам.
+
+Значення відступу буде дорівнювати 
+найбільшому з 2х значеннь.
+Відступ margin прийнято задавати з ліва направо
+та зверху вниз
+*/
+
+.block-collapse1 {
+	background-color: #1e1e548b;
+	padding: 20px;
+	margin-bottom: 20px; /* margin: зверху зправа знизу зліва; */
+}
+.block-collapse2 {
+	background-color: #471d1388;
+	padding: 20px;
+	margin-top: -30px;
+}
+
+
+/* 
+	!!!!!!!!!! Голосова вправа
+	Для того, щоб вдало застосовати той чи інший відступ
+	проговорюємо вголос:
+	1) який тип відступу треба (внутрішній чи зовнішній)?
+	2) для якого об'єкту треба задати відступ?
+*/
+
+/* --------------------------------------------------------- */
+
+/*
+	width - чітко задає ширину блочного (блочно-рядкового) 
+	об'єкту.
+	НЕ працює зі рядковими об'єктами
+	width: значення;
+	auto - (за замовченням) автоматичний розмір
+	НЕ успадковується
+*/
+.width1 {
+	background-color: #1e1e548b;
+	padding: 10px;
+	width: 800px;
+	margin-bottom: 20px;
+}
+/*
+	max-width 
+	Встановлює максимальну ширину 
+	блочних (блочно-рядкових) тегів 
+	Властивість не успадковується 
+	НЕ працює зі рядковими об'єктами
+*/
+.max-width {	
+	background-color: #1e1e548b;
+	padding: 10px;
+	max-width: 50%;
+	margin-bottom: 20px;
+}
+/*
+	min-width 
+	Встановлює мінімальну ширину 
+	блочних (блочно-рядкових) тегів 
+	Властивість не успадковується 
+	НЕ працює зі рядковими об'єктами
+*/
+.min-width {
+	background-color: #1e1e548b;
+	padding: 10px;
+	min-width: 400px;
+	margin-bottom: 20px;
+}
+
+
+/*
+height 
+Встановлює чітку висоту блочних (блочно-рядкових) тегів 
+Властивість не успадковується 
+НЕ працює зі рядковими об'єктами
+
+min-height 
+Встановлює мінімальну висоту 
+блочних (блочно-рядкових) тегів 
+Властивість не успадковується 
+НЕ працює зі рядковими об'єктами
+
+max-height 
+Встановлює максимальну 
+висоту блочних (блочно-рядкових) тегів 
+Властивість не успадковується 
+НЕ працює зі рядковими об'єктами
+*/
+.height1 {
+	background-color: #471d1388;
+	padding: 10px;
+	height: auto;
+	margin-bottom: 20px;
+
+}
+.max-height {
+	background-color: #471d1388;
+	padding: 10px;
+	max-height: 10px;
+	margin-bottom: 20px;
+}
+.min-height {
+	background-color: #471d1388;
+	padding: 10px;
+	min-height: 78px;
+	margin-bottom: 20px;
+}
+
+/*
+box-sizing
+Застосовується для зміни алгоритму обчислення величин
+content-box - (за замовченням) додає відступи
+до розміру об'єкту
+border-box - значення розмірів враховують відступи
+*/
+
+
+/*
+	overflow 
+	Керує відображенням контенту блочного елементу
+	Властивість не успадковується
+	visible - (за замовченням) Відображається усесь 
+	контент елемента, навіть за межами встановлених розмірів
+	hidden - Відображається тільки контент всередені елемента,
+	clip - Майже теж саме що й hidden.
+	все інше буде сховано
+	scroll - Завжди додаються смужки прокрутки
+	auto - Смужки прокрутки додаються лише за необхідністю
+
+	Тільки вертикаль
+	overflow-y: ; 
+	Тільки горизонталь
+	overflow-x: ;
+*/
+.block-overflow p {
+	background-color: #1e1e548b;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+.overflow-hidden {
+	max-height: 40px;
+	overflow: hidden;
+}
+.overflow-scroll {
+	max-height: 80px;
+	overflow: scroll;
+}
+.overflow-auto {
+	max-height: 80px;
+	overflow: auto;
+}
+
+
+/*
+vertical-align - Визначає вертикальне верівнювання 
+блочно-рядкових або блочно-рядкових + рядкових об'єктів.
+top
+middle
+bottom
+*/
+
+/*
+	display
+	Багатоцільова властивість яка задає 
+	глобальні параметри тега. 
+	Властивість не успадковується
+	block - (за замовченням для блочних об'ектів) 
+	Елемент відображається як блочний.
+	inline - (за замовченням для рядкових об'ектів)  
+	Елемент відображається як рядковий.
+	inline-block - (блочно-рядковий) 
+	Елемент відображається як 
+	рядковий але з можливістю 
+	використання усіх CSS-властивостей.
+	none - Елемент не виводиться в браузер. 
+	Інші елементи займають його місце.
+	Не приймає участь у обробці браузером.
+*/
+
+.display p {
+	background-color: #471d1388;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+.display-block {
+	background-color: #471d1388;
+	padding: 10px;
+	margin-bottom: 20px;
+	display: block;
+}
+.display-inline {
+	display: inline;
+}
+.display-inline-block {
+	display: inline-block;
+}
+.display-none {
+	display: none;
+}
+
+
+/* Центрування блоку */
+/*
+1) Об'єкт має бути блочним
+2) Об'єкт має мати меньшу ширину
+	за батьківський елемент
+3) Додаємо margin: 0 auto;
+*/
+
+
+/* Домашнє завдання */
+.furniro {
+	background-color: #FFF3E3;
+	height: 443px;
+	width: 643px;
+	margin: 0 auto;
+	font-family: poppins, sans-serif;
+	padding-bottom: 20px;
+}
+.arrival {
+	font-weight: 600;
+	padding-top: 62px;
+	padding-left: 41px;
+	letter-spacing: 3px;
+	margin-bottom: 4px;
+}
+.titlearrival {
+	font-weight: 700;
+	font-size: 52px;
+	line-height: 65px;
+	padding-left: 41px;
+	color: #B88E2F;
+	margin-bottom: 17px;
+	margin-right: 43px;
+}
+.textarrival {
+	padding-left: 41px;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 24px;
+	margin-right: 56px;
+	margin-bottom: 46px;
+}
+.button {
+	font-weight: 700;
+	padding: 25px 72px;
+	background-color: #B88E2F;
+	color: white;
+	margin-left: 41px;
+	text-transform: uppercase;
+	display: inline-block;
+	text-align: center;
+	font-size: 16px;
+	line-height: 1.5;
+}
