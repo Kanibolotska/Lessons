@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!-- Ukraine - uk -->
+<!-- Мова не визначена - zxx -->
+<!-- Коди мов https://html-css.co.ua/html/lang-kodu-mov/ -->
+<html lang="en">
+
+<head>
+	<!-- Кодування тексту -->
+	<meta charset="UTF-8">
+	<!-- Налаштування в'юпорту (адаптиву, масштабу тощо) -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Підключення віддалених шрифтів -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+	<!-- Файл підключення локальних шрифтів -->
+	<link rel="stylesheet" href="css/fonts.css">
+	<!-- Файл обнулення стилів -->
+	<link rel="stylesheet" href="css/reset.css">
+	<!--Підключення основного файлу стилів -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Заголовок сторінки в браузері (вкладці) -->
+	<title>Homework_6</title>
+</head>
+
+<body>
+	<header>
+		<h1>CSS-властивості оформлення блоків, властивість background</h1>
+	</header>
+	<main>
+		<h2>border</h2>
+		<p class="border-solid">solid - суцільна лінія</p>
+		<p class="border-dotted">dotted - пунктирна лінія</p>
+		<p class="border-dashed">dashed - штрихована лінія</p>
+		<p class="border-double">double - подвійна лінія</p>
+		<p class="border-transparent">transparent - прозорий колір</p>
+		<p class="border-mix">комбіновані лінії</p>
+		<h2>outline - обводка навколо елемента</h2>
+		<p class="outline">outline-offset - відстань від об'єкта до обводки</p>
+		<h2>border-radius - радіус заокруглення кутів блоку</h2>
+		<p class="border-radius">border-radius: 10px;</p>
+		<p class="border-radius-mix">border-radius: 20px 10px 5px 0px</p>
+		<h2>circle</h2>
+		<p class="circle">border-radius: 50%;</p>
+		<h2>box-shadow</h2>
+		<p class="box-shadow">box-shadow: 5px 2px 10px 10px rgba;</p>
+		<p class="inset">inset - тінь в середені об'єкту</p>
+		<a href="#" class="button">button</a>
+		<h2>opacity</h2>
+		<p>opacity: 0 - повна прозорість, з об'єктами що не бачимо, взаємодіяти можемо, займає місце на сторінці</p>
+		<p class="opacity0">opacity: 0;</p>
+		<p class="opacity5">opacity: 0.5;</p>
+		<p class="opacity1">opacity: 1;</p>
+		<h2>visibility</h2>
+		<p>visibility: hidden - об'єкт ховається, з ним не можна взаємодіяти, займає місце на сторінці</p>
+		<p class="visibility-hidden">visibility: hidden;</p>
+		<p class="visibility-visible">visibility: visible; за замовченням</p>
+		<h2>display: none</h2>
+		<p>display: none - об'єкт ховається, з ним не можна взаємодіяти, він не займає місце на сторінці</p>
+		<h2>background-color</h2>
+		<p class="bg-color">background-color: #c1c5c0;</p>
+		<h2>background-image</h2>
+		<p class="bg-image"></p>
+		<h2>background-gradient</h2>
+		<p class="bg-gradient"></p>
+		<h2>background-repeat</h2>
+		<p class="bg-no-repeat">background-repeat: no-repeat; - Не повторяти</p>
+		<p class="bg-repeat-x">background-repeat: repeat-x; - Повтор по горизонталі</p>
+		<p class="bg-repeat-y">background-repeat: repeat-y; - Повтор по вертикалі</p>
+		<p class="bg-repeat">background-repeat: repeat; - Повтор по горизонталі та вертикалі</p>
+		<h2>background-position</h2>
+		<p class="bg-position">background-position: відсотки, px, слова; - Визначає положення фону</p>
+		<h2>background-attachment</h2>
+		<p class="bg-attachment-fixed">background-attachment: fixed; - Фон фіксується відносно в'юпорта</p>
+		<h2>background-size</h2>
+		<p class="bg-size-contain">background-size: contain; - Масштабує зображення зі збереженням пропорцій</p>
+		<p class="bg-size-cover">background-size: cover; - Масштабує зображення до заповнення блоку</p>
+		<h2>background-clip</h2>
+		<p class="bg-clip">background-clip: padding-box; - Фон обрізається по кордону padding</p>
+		<p class="bg-clip-text">background-clip: text; - Фон обрізається по тексту <br> Lorem ipsum dolor sit amet
+			consectetur adipisicing elit. Ipsam dicta quas, consequatur voluptate sed cum? Dolore, assumenda. Cumque, vel
+			laudantium numquam laborum iste rem omnis quia eaque officia earum cum?</p>
+		<h2>universal property background</h2>
+		<p class="bg-universal">background: колір зображення положення розмір повторення прикріплення;</p>
+		<h2>Мультіфони</h2>
+		<p class="bg-multifoni"></p>
+		<h2>Стрілки на CSS</h2>
+		<div class="arrow-left"></div>
+		<div class="arrow-right"></div>
+		<div class="arrow-top"></div>
+		<div class="arrow-bottom"></div>
+
+		<div class="checkout">
+			<img class="checkout-logo" src="img/Logo.svg" alt="Logo brand">
+			<h3 class="checkout-title">Checkout</h3>
+			<div class="checkout-text">
+				<a href="/">Home</a>
+				<img src="img/slesh.svg" alt="#" class="arrow">
+				<span>Checkout</span>
+			</div>
+		</div>
+
+		<div class="WebDesigner">
+			<h3 class="WebDesigner-title">Web Designer</h3>
+			<a href="#" class="WebDesigner-button">Apply Now</a>
+		</div>
+
+		<div class="Catalyst">
+			<div class="paragraph1">
+				<h3 class="paragraph1-title">About this position</h3>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+					industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+					scrambled it to make a type specimen book.</p>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+					industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+					scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+					into electronic typesetting, remaining essentially unchanged</p>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+					industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+					scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+					into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+					release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+					software like Aldus PageMaker including versions of Lorem Ipsum</p>
+			</div>
+			<div class="paragraph2">
+				<h3 class="paragraph2-title">Responsibilities</h3>
+				<ul>
+					<li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+						industry's standard dummy text</li>
+					<li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+						industry's standard dummy text ever since the 1500s</li>
+					<li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+						industry's</li>
+					<li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+						industry's standard dummy text</li>
+					<li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+						industry's standard dummy text ever since the 1500s,</li>
+					<li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+						industry's</li>
+				</ul>
+			</div>
+			<div class="paragraph3">
+				<h3 class="paragraph3-title">Requirements</h3>
+				<ul>
+					<li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+						industry's standard dummy text</li>
+					<li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+						industry's standard dummy text ever since the 1500s,</li>
+					<li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+						industry's</li>
+					<li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+						industry's standard dummy text</li>
+				</ul>
+			</div>
+			<div class="paragraph4">
+				<h3 class="paragraph4-title">Benefits</h3>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+					industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+					scrambled it to make a type specimen book</p>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+					industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+					scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+					into electronic typesetting, remaining essentially unchanged</p>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+					industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+					scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+					into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+					release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+					software like Aldus PageMaker including versions of Lorem Ipsum</p>
+			</div>
+		</div>
+	</main>
+</body>
+
+</html>

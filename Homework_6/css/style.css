@@ -1,0 +1,592 @@
+body {
+	/* font-family: "InterDisplay"; */
+	font-family: "Poppins", sans-serif;
+	background-color: #536155;
+	padding: 20px;
+}
+
+h1 {
+	text-align: center;
+	font-weight: 600;
+	font-size: 34px;
+	color: #c1c5c0;
+	text-shadow: 2px 2px 1px #7c827e, -2px -2px 4px #052406;
+}
+
+
+/* ======================================================== */
+/* ----------- CSS-властивості оформлення блоків ---------- */
+/* ======================================================== */
+
+/*
+border 
+Універсальна властивість встановлює товщину,
+стиль та колір границі навколо елемента 
+Властивість не успадковується
+border: товщина стиль колір;
+Основні стили - solid dotted dashed double
+transparent - прозорий колір
+*/
+h2 {
+	margin: 20px;
+	font-weight: 600;
+	font-size: 20px;
+	color: #000000;
+	text-shadow: 2px 2px 1px #ffffff, -2px -2px 4px #ffffff;
+}
+
+.border-solid {
+	border: 5px solid #ffffff;
+	padding: 10px 0px;
+	margin-bottom: 10px;
+}
+.border-dashed {
+	border: 5px dashed #ffffff;
+	padding: 10px 0px;
+	margin-bottom: 10px;		
+}
+.border-double {
+	border: 5px double #ffffff;
+	padding: 10px 0px;
+	margin-bottom: 10px;
+}
+.border-dotted {
+	border: 5px dotted #ffffff;
+	padding: 10px 0px;
+	margin-bottom: 10px;
+}
+.border-transparent {
+	border: 5px solid transparent;
+	padding: 10px 0px;
+	margin-bottom: 10px;
+	background-color: rgba(180, 195, 186, 0.697);
+}
+.border-mix {
+	border-top: 5px solid #ffffff;
+	border-right: 5px dashed #ffffff;
+	border-bottom: 5px dotted #ffffff;
+	border-left: 5px double #ffffff;
+	padding: 10px 0px;
+	margin-bottom: 10px;		
+}
+
+/*
+outline 
+Універсальна властивість встановлює товщину,
+стиль та колір обводки навколо елемента 
+Властивість не успадковується
+
+
+outline-offset - відстань від об'єкта до обводки
+
+	outline-width: ;
+	outline-style: ;
+	outline-color: ;
+	
+	outline-offset: ;
+*/
+.outline {
+	outline: 5px solid rgb(255, 255, 255);
+	outline-offset: 10px;
+	padding: 10px 0px;
+	margin-bottom: 10px;
+	border: #ffffff 5px double;
+}
+
+/*
+border-radius
+Встановлює радіус заокруглення кутів блоку. 
+Властивість не успадковується
+*/
+.border-radius {
+	border: 5px solid #ffffff;
+	padding: 10px 0px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+}
+.border-radius-mix {
+	border: 5px solid #ffffff;
+	padding: 10px 0px;
+	margin-bottom: 10px;
+	border-radius: 0px 30px 20px 10px;
+}
+
+.circle {
+	width: 100px;
+	height: 100px;
+	background-color: #7a956b;
+	border-radius: 50%;
+	padding: 30px 5px;
+}
+
+/*
+box-shadow
+Додає тінь до елементу
+Властивість не успадковується
+box-shadow: зсув_по_гориз зсув_по_верт радіус(розмиття) розмір колір
+inset - тінь в середені об'єкту
+*/
+.box-shadow {
+	box-shadow: 5px 2px 10px 10px rgba(255, 255, 255, 0.8), -5px -2px 10px 10px rgba(0, 0, 0, 0.8);
+	padding: 10px 0px;
+	margin-bottom: 10px;
+}
+.inset {
+	box-shadow: inset 5px 5px 10px 5px rgb(255, 255, 255);
+	padding: 10px 0px;
+	margin-bottom: 10px;
+}
+.button {
+	padding: 15px;
+	background-color: #7a956b;
+	border-radius: 15px;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	margin-bottom: 20px;
+	box-shadow: 0 5px 0px 0px #000;
+}
+
+/*
+opacity
+Встановлює рівень прозорості елемента
+Властивість не успадковується
+0 - повна прозорість
+1 - повна непрозорість (за замовченням)
+0.5 - прозорість 50%
+*/
+
+.opacity0 {
+	opacity: 0;
+}
+.opacity5 {
+	opacity: 0.5;
+}
+.opacity1 {
+	opacity: 1;
+}
+
+/*
+visibility
+Керує відображенням елемента
+visible - (за замовченням) відображає об'єкт
+hidden - ховає об'єкт (з об'єктом не можна взаємодіяти)
+*/
+
+.visibility-visible {
+	visibility: visible;
+}
+.visibility-hidden {
+	visibility: hidden;
+}
+
+/* ----------------------------------- */
+/* -----Властивість background-------- */
+/* ----------------------------------- */
+
+
+	/* Окремі властивості */
+
+	/* Визначає колір фону елемента */
+	/* background-color: green; */
+	/* background-color: transparent; */
+.bg-color {
+	background-color: rgba(180, 195, 186, 0.697);
+	padding: 10px;
+	margin-bottom: 10px;
+}
+	/* 
+		Встановлює фонове зображення елемента 
+		або задає градієнтну заливку 
+		!! Фонове зображення НЕ встановлює розміри об'єкту
+	*/
+	/* background-image: url("../img/honey.jpg"); */
+	/* background-image: linear-gradient(18deg, rgba(11, 10, 20, 1) 20%, rgba(191, 21, 56, 1) 57%, rgba(20, 17, 10, 1) 100%, rgba(20, 17, 10, 1) 100%); */
+
+.bg-image {
+	background-image: url("../img/bg.jpg");
+	padding: 20px;
+	background-size: cover;
+	background-position: center;
+	margin-bottom: 10px;
+}
+.bg-gradient {
+	background-image: linear-gradient(271deg,rgba(7, 18, 23, 1) 0%, rgba(64, 107, 83, 1) 41%, rgba(235, 228, 209, 0.47) 100%);	
+	padding: 20px;
+	margin-bottom: 10px;
+}
+	/* 
+		Визначає, як повторюватиметься 
+		фонове зображення та градієнту 
+	*/
+	/* background-image: url("../img/honey.jpg"); */
+	/* background-image: url("../img/repeat.jpg"); */
+	/* height: 2000px; */
+
+	/* background-repeat: repeat; (за замовченням) */
+	/* Не повторяти */
+	/* background-repeat: no-repeat; */
+	/* Повтор по горизонталі */
+	/* background-repeat: repeat-x; */
+	/* Повтор по вертикалі */
+	/* background-repeat: repeat-y; */
+
+.bg-no-repeat {
+	background-image: url("../img/bg.jpg");
+	background-repeat: no-repeat;
+	margin-bottom: 10px;
+	color: #ffffff;
+   background-size: auto 200px; /* РОЗМІР КАРТИНКИ ширина auto, висота 200px */
+   height: 300px;     /* 3. ВИСОТА САМОГО БЛОКУ */
+   border: 2px solid rgb(255, 255, 255);
+}
+.bg-repeat-x {
+	background-image: url("../img/bg.jpg");
+	background-repeat: repeat-x;
+	background-size: auto 200px;
+	height: 300px;
+	border: 2px solid rgb(255, 255, 255);
+	color: #ffffff;
+	margin-bottom: 10px;
+}
+.bg-repeat-y {
+	background-image: url("../img/bg.jpg");
+	background-repeat: repeat-y;
+	margin-bottom: 10px;
+	background-size: auto 200px;
+	height: 300px;
+	color: #ffffff;
+	border: 2px solid rgb(255, 255, 255);
+}
+.bg-repeat {
+	background-image: url("../img/bg.jpg");
+	margin-bottom: 10px;
+	background-size: auto 200px;
+	height: 300px;
+	color: #ffffff;
+	border: 2px solid rgb(255, 255, 255);
+}
+
+
+	/*
+		Задає початкове положення фонового зображення та градієнту,
+		де перше значення (відсотки, px, слово) 
+		визначає розташування по горизонталі,
+		друге – вертикалі.
+
+		0 0 (або left top) - за замовченням 
+		center
+		top
+		left 
+		bottom
+		right
+	*/
+
+	/* 
+		Значення у відсотках:
+		Горизонтальне залежить від ширини об'єкту
+		Вертикальне від висоти об'єкту 
+		(!!!!!!!) Але рухає центр зображення
+		Значення 50% (center) розмістить зображення таким 
+		чином, що центральна точка зображення 
+		буде співпадати з центральною точкою об'єкту
+	*/
+
+.bg-position {
+	background-image: url("../img/bg.jpg");
+	margin-bottom: 10px;
+	height: 300px;
+	color: #ffffff;
+	border: 2px solid rgb(255, 255, 255);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+	/* background-position: горизонталь вертикаль */
+	/* background-position: 0 0; (за замовченням) */
+
+	/* background-position: 20px 50px; */
+	/* background-position: right bottom; */
+	/* background-position: center; */
+	/* background-position: 20% 10%; */
+	/* background-position: 50%; */
+
+
+
+	/* 
+	Керує встановленням фонового зображення відносно вікна браузера (в'юпорта), 
+	фонове зображення та градієнт перестає скралитись разом із вмістом елемента.
+
+	scroll - (за замовченням) позиціонується відносно 
+	елемента та скролиться разом з блоком
+	fixed - фонове зображення позиціонується відносно в'юпорта, 
+	НЕ скролиться разом з блоком
+	*/
+
+	/* background-attachment: fixed; */
+.bg-attachment-fixed {
+	background-image: url("../img/bg.jpg");
+	margin-bottom: 10px;
+	height: 300px;
+	color: #ffffff;
+	border: 2px solid rgb(255, 255, 255);
+	background-position: center;
+	background-repeat: repeat-y;
+	background-attachment: fixed;
+	background-size: contain;
+}
+
+	/*
+	Масштабує фонове зображення та градієнт згідно з заданими розмірами. 
+	У цифрах, де перше значення (відсотки, px) визначає ширину,
+	друге – висоту. Або спеціальним значенням.
+
+	contain; - Масштабує зображення зі збереженням пропорцій таким чином, 
+	щоб картинка повністю помістилася всередину блоку. 
+	Тобто щонайменше картинки
+	cover - Масштабує зображення зі збереженням пропорцій так, 
+	щоб його ширина або висота дорівнювала ширині або висоті блоку. 
+	Тобто з більшого боку картинки
+	*/
+
+	/* background-size: ширина висота */
+	/* background-size: auto auto; (за замовченням) */
+
+	/* background-size: 200px; */
+	/* background-size: auto 200px; */
+	/* background-size: 200px 50px; */
+
+.bg-size-contain {
+	background-image: url("../img/bg.jpg");
+	margin-bottom: 10px;
+	height: 300px;
+	color: #ffffff;
+	border: 2px solid rgb(255, 255, 255);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.bg-size-cover {
+	background-image: url("../img/bg.jpg");
+	margin-bottom: 10px;
+	height: 300px;
+	color: #ffffff;
+	border: 2px solid rgb(255, 255, 255);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+	/*
+	background-clip налаштовує поведінку 
+	фонового зображення разом з межею border та текстом
+	*/
+
+	/* background-position: center;
+	background-size: cover;
+	border: 10px dashed rgba(143, 67, 67, 1);
+	background-clip: padding-box; */
+
+	/* background-repeat: no-repeat;
+	background-size: cover;
+	background-clip: text;
+	color: transparent; */
+
+.bg-clip {
+	background-image: url("../img/bg.jpg");
+	margin-bottom: 10px;
+	height: 300px;
+	color: #ffffff;
+	border: 10px dashed rgb(246, 246, 246);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-clip: padding-box;
+}
+.bg-clip-text {
+	background-image: url("../img/bg.jpg");
+	margin-bottom: 10px;
+	height: 150px;
+	color: transparent;
+	border: 2px solid rgb(255, 255, 255);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-clip: text;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+	/* 
+	Універсальна властивість - background
+	Властивість background
+	Ця універсальна CSS властивість дозволяє одночасно 
+	задати кілька параметрів фону,
+	а саме визначити колір,  встановити фонове зображення, 
+	задати початкове положення фонового зображення,
+	визначити як повторюватиметься фонове зображення, 
+	встановити чи прокручуватиметься фонове зображення 
+	разом із вмістом і масштабувати фонове зображення 
+	відповідно до заданих розмірів.
+	Також значенням властивості background може 
+	бути вказана градієнтна заливка фону.
+	*/
+.bg-universal {
+	margin-bottom: 10px;
+	height: 300px;
+	color: #ffffff;
+	border: 2px solid rgb(255, 255, 255);
+	background: rgb(102, 134, 102) url("../img/bg.jpg") center / 400px no-repeat scroll;
+}
+
+	/* Мультіфони */
+	/* background:
+		url("../img/honey.jpg") center / 100px no-repeat,
+		url("../img/building.jpg") 0 0 / 160px no-repeat,
+		linear-gradient(90deg, #ff3f3a 0%, #3a3dff 50%, #f75e05 100%); */
+
+
+.bg-multifoni {
+	margin-bottom: 10px;
+	height: 300px;
+	border: 2px solid rgb(255, 255, 255);
+	background:
+		url("../img/bg.jpg") center / 500px no-repeat,
+		url("../img/bg.jpg") 20px / 200px no-repeat,
+		linear-gradient(271deg,rgba(7, 18, 23, 1) 0%, rgba(64, 107, 83, 1) 41%, rgba(235, 228, 209, 0.47) 100%);	
+}
+/* Стрілки на CSS */
+
+.arrow-left {
+	width: 0;
+	height: 0;
+	border-top: 50px solid transparent;
+	border-right: 100px solid rgb(21, 46, 21);
+	border-bottom: 50px solid transparent;
+}
+.arrow-right {
+	width: 0;
+	height: 0;
+	border-top: 50px solid transparent;
+	border-left: 100px solid rgb(21, 46, 21);
+	border-bottom: 50px solid transparent;
+}
+.arrow-top {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid rgb(21, 46, 21);
+	margin: 10px 0;
+}
+.arrow-bottom {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 100px solid rgb(21, 46, 21);
+}
+
+
+/* Домашнє завдання */
+.checkout {
+	background: url("../img/Checkout.png") center / cover no-repeat,
+	linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+	width: 100%;
+	height: 316px;
+	text-align: center;
+	font-family: Poppins, sans-serif;
+	margin-bottom: 20px;
+	padding-top: 61px;
+}
+.checkout-logo {
+	width: 77px;
+}
+.checkout-title {
+	font-weight: 500;
+	font-size: 48px;
+	line-height: 1.2;
+}
+
+.checkout-text a,
+.checkout-text span {
+	color: #000000;
+	text-decoration: none;
+	vertical-align: middle;
+}
+.checkout-text a {
+   font-weight: 500;
+}
+
+.arrow {
+   margin: 0 8px; /* Невеликий відступ навколо стрілочки */
+   vertical-align: middle;
+}
+
+/* Друге */
+.WebDesigner {
+	background: url("../img/Web-Designer.png") center / cover no-repeat,linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+	width: 100%;
+	height: 342px;
+	font-family: Poppins, sans-serif;
+	margin-bottom: 20px;
+	text-align: center;
+	padding: 94px 0;
+}
+.WebDesigner-title {
+	font-family: Barlow, sans-serif;
+	font-weight: 800;
+	font-size: 64px;
+	line-height: 1.5;
+	color: #F9EFEC;
+	text-transform: uppercase;
+	margin: 0 0 17px 0; 
+   padding: 0;
+}
+.WebDesigner-button {
+	background-color: #0A84FF;
+	font-family: Roboto Flex, sans-serif;
+	line-height: 1.5;
+	color: #ffffff;
+	padding: 13px 78.5px;
+	border-radius: 10px;
+	display: inline-block;
+}
+
+/* Третє */
+
+.Catalyst {
+	font-family:Barlow, sans-serif;
+	width: 834px;
+	height: auto;
+	padding: 32px;
+	background-color: #1A1A1A;
+	margin: 0 auto;
+	border-radius: 12px; 
+}
+.paragraph1-title, .paragraph2-title, .paragraph3-title, .paragraph4-title {
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 1.5;
+	color: #F9EFEC;
+	margin-bottom: 12px;
+	text-transform: uppercase;
+}
+.Catalyst p {
+	font-weight: 400;
+	line-height: 1.5;
+	color: #B3B3B2;
+	margin-bottom: 24px;
+	font-size: 16px;
+}
+/* Стилізація списку  */
+.Catalyst li {
+	font-weight: 400;
+	line-height: 1.5;
+	color: #B3B3B2;
+	margin-bottom: 12px;
+	font-size: 16px;
+	background: url("../img/li.svg") 0 0 / 16px no-repeat;
+	padding-left: 26px;
+	min-height: 16px;
+}
+/* Стилізація списку  */
