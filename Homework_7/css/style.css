@@ -1,0 +1,762 @@
+/* Значення за замовченням  */
+h1 {
+	font-size: 32px;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 30px;
+	text-shadow: #232720 1px 1px 3px, #adbca5 -1px -1px 3px, #bbcbb3 -1px 1px 0px, #232720 1px -1px 3px;
+	color: #fff;
+}
+/* Значення за замовченням  */
+body {
+	font-family: "Poppins", sans-serif;
+	padding: 20px;
+	background-color: #5f7265;
+	width: 100%;
+	text-align: center;
+	max-width: 1230px;
+	margin-inline: auto;
+
+}
+h2 {
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 15px;
+	margin-top: 40px;
+	color: #020202;
+	text-shadow: 3px 3px 3px rgba(248, 248, 248, 0.972), -3px -3px 3px rgb(244, 244, 244);
+}
+/* ============================================= */
+/* =============== Псевдокласи ================= */
+/* ============================================= */
+
+/* Анатомія псевдокласів */
+/*
+селектор:псевдоклас{
+}
+*/
+/*
+Вкладеність
+селектор#1:псевдоклас селектор#2{
+}
+*/
+.container1 {
+	margin-bottom: 20px;
+}
+/* Псевдокласи стану */
+/*
+:hover
+Звернення до елемента у стані 
+"при наведенні курсору"
+Застосовується до будь-якого елемента
+*/
+/* Span стилізується при наведенні на .link */
+/* .link:hover span {
+	color: red;
+} */
+/* Span стилізується при наведенні на span */
+/* .link span:hover {
+	color: red;
+} */
+.hover {
+	font-size: 18px;
+	padding: 20px 50px;
+	background-color: #7a956b;
+	color: #fff;
+	font-weight: 800;
+	text-align: center;
+	border: #fff 3px solid;
+	border-radius: 15px;
+	box-shadow: 0 6px 0px 0px #000;
+	margin-right: 20px;
+	position: relative;
+}
+.hover:hover {
+	background-color: #aec5b0;
+	text-decoration: underline;
+	color: #232720;
+	box-shadow: 0 3px 0px 0px #000;
+	top: 3px;
+}
+
+/*
+:active Звернення до елемента у стані 
+"при натиснутій клавіші миші"
+*/
+.active {
+	font-size: 18px;
+	padding: 20px 50px;
+	background-color: #7a956b;
+	color: #fff;
+	font-weight: 800;
+	text-align: center;
+	border: #fff 3px solid;
+	border-radius: 15px;
+	box-shadow: 0 6px 0px 0px #000;
+	margin-right: 20px;
+	position: relative;
+}
+.active:active {
+	background-color: #aec5b0;
+	text-decoration: underline;
+	color: #232720;
+	box-shadow: 0 3px 0px 0px #000;
+	top: 3px;
+}
+/*
+:visited Звернення до тега A 
+у стані "відвіданого посилання"
+обмежена кількість властивостей
+
+Варто зазначити, що через міркування безпеки 
+та конфіденційності браузери дозволяють 
+змінювати лише деякі властивості для псевдокласу :visited, такі як:
+• color (колір тексту),
+• background-color (колір фону),
+• border-color (колір рамки),
+• outline-color (колір обвідки),
+• column-rule-color (колір розділових ліній у колонках),
+• text-decoration-color (колір текстових прикрас).
+*/
+.visited {
+		font-size: 18px;
+	padding: 20px 50px;
+	background-color: #7a956b;
+	color: #fff;
+	font-weight: 800;
+	text-align: center;
+	border: #fff 3px solid;
+	border-radius: 15px;
+	box-shadow: 0 6px 0px 0px #000;
+	margin-right: 10px;
+	position: relative;
+}
+.visited:visited {
+	background-color: #aec5b0;
+	text-decoration-color: #232720;
+	color: #232720;
+	border-color: #232720;
+}
+
+/*
+:focus, :focus-visible Звернення до 
+елементу у стані "фокусу"
+*/
+/* Завжди коли взаємодіємо з об'єктом */
+
+.container2 {
+	margin-bottom: 20px;
+}
+.focus {
+	font-size: 18px;
+	padding: 20px 50px;
+	background-color: #7a956b;
+	color: #fff;
+	font-weight: 800;
+	text-align: center;
+	border: #fff 3px solid;
+	border-radius: 15px;
+	box-shadow: 0 6px 0px 0px #000;
+	position: relative;
+	margin-right: 20px;
+}
+.focus:focus {
+	background-color: #aec5b0;
+	text-decoration: underline;
+	color: #232720;
+	box-shadow: 0 3px 0px 0px #000;
+	top: 3px;
+}
+/* Тільки коли на об'єкт перейшли (TAB) */
+
+.focus-visible{
+	font-size: 18px;
+	padding: 20px 50px;
+	background-color: #7a956b;
+	color: #fff;
+	font-weight: 800;
+	text-align: center;
+	border: #fff 3px solid;
+	border-radius: 15px;
+	box-shadow: 0 6px 0px 0px #000;
+	position: relative;
+	margin-right: 20px;
+}
+.focus-visible:focus-visible {
+	background-color: #aec5b0;
+	text-decoration: underline;
+	color: #232720;
+	box-shadow: 0 3px 0px 0px #000;
+	top: 3px;
+}
+
+/*
+:target
+Звернення до елемента у стані
+"ефекту від посилання з іншого об'єкту"
+*/
+.target {
+	font-size: 18px;
+	padding: 20px 50px;
+	background-color: #7a956b;
+	color: #fff;
+	font-weight: 800;
+	text-align: center;
+	border: #fff 3px solid;
+	border-radius: 15px;
+	box-shadow: 0 6px 0px 0px #000;
+	position: relative;
+	margin-right: 20px;
+}
+.block {
+	margin-top: 20px;
+	font-size: 18px;
+	padding: 20px 50px;
+	background-color: #7a956b;
+	color: #fff;
+	font-weight: 800;
+	text-align: center;
+	border: #fff 3px solid;
+	border-radius: 15px;
+	box-shadow: 0 6px 0px 0px #000;
+	position: relative;
+	margin-right: 20px;
+	display: none;
+}
+.block:target {
+	display: block;
+	background-color: #aec5b0;
+	text-decoration: underline;
+	color: #232720;
+	box-shadow: 0 3px 0px 0px #000;
+	top: 3px;
+}
+
+/* Псевдокласи положення у коді */
+/*
+:first-child
+Звернення до першого дочірнього елементу в коді
+*/
+.first-child {
+	padding: 10px;
+	background-color: #7a956b;
+	text-align: left;
+	margin-bottom: 5px;
+}
+.first-child p :first-child {
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 16px;
+}
+/* 
+:first-of-type	
+Звернення до першого вказаного 
+об'єкту в коді
+*/
+
+.first-of-type {
+	padding: 15px;
+	background-color: #7a956b;
+	text-align: left;
+	margin-bottom: 5px;
+}
+.first-of-type p:first-of-type {
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 16px;
+}
+/*
+:last-child
+Звернення до останього 
+елементу в коді
+*/
+.last-child {
+	padding: 15px;
+	background-color: #7a956b;
+	text-align: left;
+	margin-bottom: 5px;
+}
+.last-child p:last-child {
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 16px;
+}
+
+/* останній тег P */
+/* .text p:last-of-type {
+	color: #000;
+} */
+.last-of-type{
+	padding: 15px;
+	background-color: #7a956b;
+	text-align: left;
+	margin-bottom: 20px;
+}
+.last-of-type p:last-of-type {
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 16px;
+}
+/* Шукає елемент за номером */
+
+/*
+:nth-child(значення/алгоритм)
+Звернення до конкретного елементу (ів) в коді
+*/
+.nth-child {
+	padding: 15px;
+	background-color: #aec5b0;
+	text-align: left;
+	margin-bottom: 5px;
+}
+.nth-child p:nth-child(2) {
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 16px;
+}
+
+/* Шукає вказаний селектор за номером */
+/* 
+:nth-of-type()
+*/
+
+.nth-of-type {
+	padding: 15px;
+	background-color: #aec5b0;
+	text-align: left;
+	margin-bottom: 5px;
+}
+.nth-of-type p:nth-of-type(2) {
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 16px;
+}
+/* 
+	Алгоритми NTH
+	odd - через один не парні
+	even - через один парні
+*/
+.nth-of-type-odd {
+	padding: 15px;
+	background-color: #aec5b0;
+	text-align: left;
+	margin-bottom: 5px;
+}
+.nth-of-type-odd p:nth-of-type(odd) {
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 16px;
+}
+.nth-of-type-even {
+	padding: 15px;
+	background-color: #aec5b0;
+	text-align: left;
+	margin-bottom: 20px;
+}
+.nth-of-type-even p:nth-of-type(even) {
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 16px;
+}
+
+/* Алгоритм "кожен-через" */
+/* коженn + починаючи з */
+
+/* Кожен третій */
+
+.nth-of-type-3n {
+	padding: 15px;
+	background-color: #7a956b;
+	text-align: left;
+	margin-bottom: 5px;
+}
+.nth-of-type-3n p:nth-of-type(3n) {
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 16px;
+}
+/* Кожен третій починаючи з першого */
+/* .text p:nth-of-type(3n + 2) {
+	color: #000;
+} */
+.nth-of-type-3n-2 {
+	padding: 15px;
+	background-color: #7a956b;
+	text-align: left;
+	margin-bottom: 20px;
+}
+.nth-of-type-3n-2 p:nth-of-type(3n+1) {
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 16px;
+}
+
+/* Кожен 4 починаючи з 2 */
+/* .text p:nth-of-type(4n + 2) {
+	color: #000;
+} */
+
+/* Кожен 6 починаючи з 3 */
+/* та кожен 6 починаючи з 4 */
+
+/* .text p:nth-of-type(6n + 3),
+.text p:nth-of-type(6n + 4) {
+	color: #000;
+} */
+
+/*
+:not(селектор або псевдоклас) 
+Псевдоклас виключення
+*/
+.not {
+	padding: 15px;
+	background-color: #aec5b0;
+	text-align: left;
+	margin-bottom: 5px;
+}
+.not p:not(.one) {
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 16px;
+}
+
+/* 
+:has(селектор або псевдоклас) 
+Псевдоклас присутності в коді
+*/
+.has {
+	padding: 15px;
+	background-color: #aec5b0;
+	text-align: left;
+	margin-bottom: 20px;
+}
+.has:has(span) {
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 16px;
+}
+
+/* Гарна практика */
+
+/* .some-block {
+	padding: 15px;
+	background-color: #77608d;
+}
+.some-block > * {
+	margin-bottom: 17px;
+}
+.some-block__title {
+	font-size: 24px;
+	font-weight: 700;
+}
+.some-block__text {
+	line-height: 1.4;
+	margin-bottom: 34px;
+}
+.some-block__link:not(:hover) {
+	text-decoration: underline;
+}
+.some-block > *:last-child {
+	margin-bottom: 0;
+} */
+
+/* 
+	!!!
+	Псевдокласи мають більший пріоритет
+	(уточнення)
+*/
+
+/* ============================================= */
+/* =============== Псевдоелементи ============== */
+/* ============================================= */
+
+/* Анатомія псевдоелементів */
+/*
+селектор::псевдоелемент{
+}
+
+Псевдоелементи не можна додати до 
+одинарних тегів (без зачиняючих елементів) (наприклад img,br), 
+тому що ці теги не можуть містити в собі контенту.
+*/
+
+/*
+::before{}
+::after{}
+
+!!!!! Псевдоелементи - рядкові (але в reset 
+доданий display: inline-block;) !!!!!
+Властивість content: ""; - Обов'язкова!
+*/
+
+.before {
+	font-size: 18px;
+	padding: 20px;
+	background-color: #7a956b;
+	color: #fff;
+	margin-bottom: 5px;
+}
+.before::before {
+	content: "Before";
+	color: #314b2d;
+}
+.after {
+	font-size: 18px;
+	padding: 20px;
+	background-color: #7a956b;
+	color: #fff;
+	margin-bottom: 10px;
+}
+.after::after {
+	content: "After";
+	color: #314b2d;
+}
+
+/* Длмашнє завдання */
+.agrolink {
+	background-color: #fff;
+	text-align: left;
+	padding: 43px;
+	font-family: DM Sans, sans-serif;
+	max-width: 550px;
+	margin-inline: auto;
+	margin-bottom: 20px;
+}
+.agrolink > * {
+	margin-bottom: 17px;
+}
+.agrolink__title{
+	font-size: 50px;
+	font-weight: 400;
+	color: #131313;
+	line-height: 1.2;
+	letter-spacing: -1.26px;
+	margin-bottom: 20px;
+}
+.agrolink__title span {
+	color: #1AAF5B;
+	font-weight: 700;
+	line-height: 1.2;
+	letter-spacing: -1.26px;
+}
+.agrolink__text {
+	line-height: 1.4;
+	margin-bottom: 34px;
+	opacity: 60%;
+	font-size: 20px;
+	line-height: 28px;
+	letter-spacing: -0.5px;
+	margin-bottom: 58px;
+}
+.agrolink__link {
+	padding: 25px 40px;
+	background-color: #1AAF5B;
+	border-radius: 0 18px 0 0;
+	color: #fff;
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 1.2;
+	letter-spacing: -0.43px;
+	box-shadow: #bdc7bb 3px 3px 7px 3px,#bdc7bb -3px -2px 7px 3px;
+}
+.agrolink__link:not(:hover) {
+	box-shadow: none;
+}
+.agrolink__link:active {
+	background-color: #155c34;
+}
+.agrolink__link::after {
+	content: "";
+	background-image: url(../img/keyboard-arrow-right.svg);
+	display: inline-block;
+	width: 20px;
+	height: 10px;
+	background-repeat: no-repeat;
+	margin-left: 18px;
+	background-size: contain;
+	background-position: center;
+	vertical-align: middle;
+}
+.agrolink > *:last-child {
+	margin-bottom: 0;
+}
+
+.agrolink__title::before {
+	content: "";
+	background-image: linear-gradient(to right, #1AAF5B, #000000);
+	height: 4px;
+	width: 40%;
+	display: block;
+	margin-bottom: 17px;
+}
+
+/* Гра */
+.maze {
+	width: 1000px;
+	height: 600px;
+	border: 3px solid #000;
+	position: relative;
+	background-image: url(../img/maze-background.jpg);
+	background-size: cover;
+	margin-inline: auto;
+	padding: 10px;
+	color: #aec5b0;
+	font-weight: 700;
+}
+.start,
+.finish,
+[class^="path"]{
+	background: linear-gradient(180deg,rgba(30, 82, 105, 0.77) 0%, rgba(80, 135, 100, 0.53) 42%, rgba(171, 165, 137, 0.45) 100%)
+}
+.finish,
+[class^="path"] {
+   opacity: 0; /* Робимо блоки невидимими */
+   transition: opacity 0.2s; /* Додаємо плавність появи */
+	pointer-events: none;
+}
+.start:hover + .path {
+   opacity: 1;
+	pointer-events: auto
+}
+.maze div:hover + div {
+   opacity: 1;
+	pointer-events: auto
+}
+.maze div:hover {
+   opacity: 1;
+	pointer-events: auto
+}
+div {
+   display: block;
+   unicode-bidi: isolate;
+}
+.start {
+	inline-size: 70px;
+	block-size: 100px;
+	display: inline-block;
+	left: 10px;
+	position: absolute;
+	text-align: center;
+	line-height: 100px
+}
+.path {
+	position: absolute;
+	margin-inline-start: 70px;
+	margin-block-start: 50px;
+   width: 200px;
+   height: 50px;
+}
+.path-turn1 {
+	margin-inline-start: 270px;
+	margin-block-start: 50px;
+   width: 50px;
+   height: 200px;
+}
+.path-turn2 {
+	margin-inline-start: 20px;
+	margin-block-start: -50px;
+	width: 250px;
+   height: 50px;
+}
+.path-turn3 {
+	margin-inline-start: 20px;
+	margin-block-start: 0px;
+	width: 50px;
+   height: 250px;
+}
+.path-turn4 {
+	margin-inline-start: 70px;
+	margin-block-start: -50px;
+	width: 100px;
+   height: 50px;
+}
+.path-turn5 {
+	margin-inline-start: 120px;
+	margin-block-start: -100px;
+	width: 50px;
+   height: 50px;
+}
+.path-turn6 {	
+	margin-inline-start: 120px;
+	margin-block-start: -80px;
+	width: 450px;
+   height: 30px;
+}
+.path-turn7 {	
+	margin-inline-start: 570px;
+	margin-block-start: -250px;
+	width: 30px;
+   height: 250px;
+}
+.path-turn8 {	
+	margin-inline-start: 600px;
+	margin-block-start: -250px;
+	width: 200px;
+   height: 30px;
+}
+.path-turn9 {
+	margin-inline-start: 800px;
+	margin-block-start: -30px;
+	width: 30px;
+   height: 170px;
+}
+.path-turn10 {
+	margin-inline-start: 700px;
+	margin-block-start: -30px;
+	width: 100px;
+   height: 30px;
+}
+.path-turn11 {
+	margin-inline-start: 700px;
+	margin-block-start: 0px;
+	width: 30px;
+   height: 180px;
+}
+.path-turn12 {
+	margin-inline-start: 730px;
+	margin-block-start: -30px;
+	width: 170px;
+   height: 30px;
+	
+}
+.finish {
+	margin-inline-start: 895px;
+	margin-block-start: -30px;
+	inline-size: 70px;
+	block-size: 100px;
+	display: inline-block;
+	text-align: center;
+	line-height: 100px
+}
+*, *::before, *::after {
+	box-sizing: border-box;
+	padding: 0;
+   margin: 0;
+   border: none;
+}
+
+
+.fihish {
+	margin-top: 20px;
+	font-size: 18px;
+	padding: 20px 50px;
+	background-color: #7a956b;
+	color: #fff;
+	font-weight: 800;
+	text-align: center;
+	border: #fff 3px solid;
+	border-radius: 15px;
+	margin-right: 20px;
+}
+.fihish:hover {
+	background-color: #7c8580;
+	color: #000;
+	box-shadow: 3px 3px 3px rgba(248, 248, 248, 0.972), -3px -3px 3px rgb(244, 244, 244);
+	top: 3px;
+}
+.fihish:active {
+	background-color: #b47bc3;
+	color: #fff;
+	box-shadow: inset 3px 3px 3px rgba(248, 248, 248, 0.972), inset -3px -3px 3px rgb(244, 244, 244);
+	top: 3px;
+}

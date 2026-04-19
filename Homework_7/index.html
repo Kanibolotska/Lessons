@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!-- Ukraine - uk -->
+<!-- Мова не визначена - zxx -->
+<!-- Коди мов https://html-css.co.ua/html/lang-kodu-mov/ -->
+<html lang="en">
+
+<head>
+	<!-- Кодування тексту -->
+	<meta charset="UTF-8">
+	<!-- Налаштування в'юпорту (адаптиву, масштабу тощо) -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Підключення віддалених шрифтів -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=DM%20Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+		rel="stylesheet">
+	<!-- Файл підключення локальних шрифтів -->
+	<link rel="stylesheet" href="css/fonts.css">
+	<!-- Файл обнулення стилів -->
+	<link rel="stylesheet" href="css/reset.css">
+	<!--Підключення основного файлу стилів -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Заголовок сторінки в браузері (вкладці) -->
+	<title>Homework_7</title>
+</head>
+
+<body>
+	<header>
+		<h1>Pseudo class and elements</h1>
+	</header>
+	<main>
+
+		<h2>Псевдокласи стану</h2>
+		<div class="container1">
+			<a class="hover" href="#"><code>:hover</code></a>
+			<a class="active" href="#"><code>:active</code></a>
+			<a class="visited" href="#"><code>:visited</code></a>
+		</div>
+		<div class="container2">
+			<a class="focus" href="#"><code>:focus</code></a>
+			<a class="focus-visible" href="#"><code>:focus-visible</code></a>
+			<a class="target" href="#target-id"><code>:target</code></a>
+		</div>
+		<div class="block" id="target-id">TARGET</div>
+		<h2>Псевдокласи положення у коді</h2>
+		<div class="block-in-code">
+			<div class="first-child">
+				<p><code>:first-child</code></p>
+				<p>Другий абзац</p>
+				<p>Третій абзац</p>
+			</div>
+			<div class="first-of-type">
+				<span>Перший абзац span</span>
+				<p><code>:first-of-type</code></p>
+				<p>Третій абзац</p>
+			</div>
+			<div class="last-child">
+				<p>Перший абзац</p>
+				<p>Другий абзац</p>
+				<p><code>:last-child</code></p>
+			</div>
+			<div class="last-of-type">
+				<p>Перший абзац</p>
+				<p><code>:last-of-type</code></p>
+				<span>Третій абзац span</span>
+			</div>
+			<div class="nth-child">
+				<p>Перший абзац</p>
+				<p><code>:nth-child</code> (2)</p>
+				<p>Третій абзац</p>
+			</div>
+			<div class="nth-of-type">
+				<p>Перший абзац</p>
+				<span>Другий абзац(span) </span>
+				<p><code>:nth-of-type</code>(2)</p>
+			</div>
+			<div class="nth-of-type-odd">
+				<p>nth-of-type(odd) - через один не парні</p>
+				<p>Другий абзац</p>
+				<p>nth-of-type(odd) - через один не парні</p>
+			</div>
+			<div class="nth-of-type-even">
+				<p>Перший абзац</p>
+				<p>nth-of-type(even) - через один парні</p>
+				<p>Третій абзац</p>
+			</div>
+			<div class="nth-of-type-3n">
+				<p>Перший абзац</p>
+				<p>Другий абзац</p>
+				<p>nth-of-type(3n) - кожен третій</p>
+				<p>Четвертий абзац</p>
+				<p>П'ятий абзац</p>
+				<p>nth-of-type(3n) - кожен третій</p>
+			</div>
+			<div class="nth-of-type-3n-2">
+				<p>nth-of-type(3n+1) - кожен третій, починаючи з першого</p>
+				<p>Другий абзац</p>
+				<p>Третій абзац</p>
+				<p>nth-of-type(3n+1) - кожен третій, починаючи з першого</p>
+				<p>П'ятий абзац</p>
+			</div>
+			<div class="not">
+				<p class="one"><code>:not(.one)</code></p>
+				<p>Другий абзац</p>
+				<p>Третій абзац</p>
+			</div>
+			<div class="has">
+				<p><code>:has(span)</code> - в абзацах немаэ span, тому не спрацьовує правило. </p>
+				<p>Другий абзац</p>
+				<p>Третій абзац</p>
+			</div>
+		</div>
+		<h2>Псевдоелементи</h2>
+		<div class="before">.class::before</div>
+		<div class="after">.class::after</div>
+				<div class="agrolink">
+			<h3 class="agrolink__title">Grown <span>by Nature</span></h3>
+			<div class="agrolink__text">
+				<p>We grow our crops naturally. We are a fast-growing agricultural technology company passionate about
+					ensuring food security. We leverage our technology to improve productivity & sales to promote food
+					security for you and your family</p>
+			</div>
+			<a href="#" class="agrolink__link">
+				<span>Learn More</span>
+			</a>
+		</div>
+				<div class="game-container">
+			<div class="maze">
+				<div class="start">START</div>
+				<div class="path"></div>
+				<div class="path-turn1"></div>
+				<div class="path-turn2"></div>
+				<div class="path-turn3"></div>
+				<div class="path-turn4"></div>
+				<div class="path-turn5"></div>
+				<div class="path-turn6"></div>
+				<div class="path-turn7"></div>
+				<div class="path-turn8"></div>
+				<div class="path-turn9"></div>
+				<div class="path-turn10"></div>
+				<div class="path-turn11"></div>
+				<div class="path-turn12"></div>
+				<div class="finish">FINISH!</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<a href="#Top"  class="fihish">Було складно(</a></p>
+	</footer>
+</body>
+
+</html>
