@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<!-- Ukraine - uk -->
+<!-- Мова не визначена - zxx -->
+<!-- Коди мов https://html-css.co.ua/html/lang-kodu-mov/ -->
+<html lang="en">
+
+<head>
+	<!-- Кодування тексту -->
+	<meta charset="UTF-8">
+	<!-- Налаштування в'юпорту (адаптиву, масштабу тощо) -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Підключення віддалених шрифтів -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
+		rel="stylesheet">
+	<!-- Файл підключення локальних шрифтів -->
+	<link rel="stylesheet" href="css/fonts.css">
+	<!-- Файл обнулення стилів -->
+	<link rel="stylesheet" href="css/reset.css">
+	<!--Підключення основного файлу стилів -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Заголовок сторінки в браузері (вкладці) -->
+	<title>Homework_9</title>
+</head>
+
+<body>
+	<header>
+		<h1 class="header">Методологія БЕМ</h1>
+	</header>
+	<main>
+		<section class="blog">
+			<div class="blog__header">
+				<img src="img/icon-globe.svg" alt="Globe" class="blog__icon">
+				<span class="blog__subtitle">BLOG SECTION</span>
+				<h2 class="blog__title">Read my latest articles</h2>
+			</div>
+			<div class="blog__body">
+				<article class="article-card article-card--large">
+					<img class="article-card__image" src="img/article-1.jpg" alt="Article 1">
+					<div class="article-card__content">
+						<span class="article-card__category">Development</span>
+						<span class="article-card__date">March 20, 2024</span>
+						<h3 class="article-card__title">Approach to eco-friendly product design</h3>
+						<p class="article-card__text">Leverage agile by the way frameworks to provide a for high level in
+							the
+							most effective way. Leverage agile by the way frameworks to provide a for high level in the most
+							effective way.</p>
+						<a href="#" class="article-card__link">Read more</a>
+					</div>
+				</article>
+				<div class="blog__sidebar">
+					<article class="article-card">
+						<div class="article-card__content">
+							<span class="article-card__category">Design</span>
+							<h3 class="article-card__title">How Raven's designs are changing the game</h3>
+							<p class="article-card__text">Leverage agile by the way frameworks to provide a for high level
+								in
+								the most important overviews.</p>
+						</div>
+					</article>
+					<article class="article-card">
+						<div class="article-card__content">
+							<span class="article-card__category">Marketing</span>
+							<h3 class="article-card__title">Prototyping secrets revealed of creation</h3>
+							<p class="article-card__text">Leverage agile by the way frameworks to provide a for high level
+								in
+								the most important overviews.</p>
+						</div>
+					</article>
+					<article class="article-card">
+						<div class="article-card__content">
+							<span class="article-card__category">Design</span>
+							<h3 class="article-card__title">Raven's perspective on the future of product design</h3>
+							<p class="article-card__text">Leverage agile by the way frameworks to provide a for highlevel in
+								the most important overviews.</p>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+		<section class="faq">
+			<div class="faq__header">
+				<img src="img/icon-globe.svg" alt="" class="faq__icon">
+				<span class="faq__subtitle">F.A.Q. SECTION</span>
+				<h2 class="faq__title">Frequently asked questions</h2>
+			</div>
+			<div class="faq__list">
+				<div class="faq__item">
+					<p class="faq__question-text">How does Raven approach the design process?</p>
+					<!-- Стрілку треба робити в css -->
+				</div>
+				<div class="faq__item">
+					<p class="faq__question-text">What types of products does Raven specialize in designing?</p>
+				</div>
+				<div class="faq__item">
+					<p class="faq__question-text">Can Raven help with prototyping and testing product ideas?</p>
+				</div>
+				<div class="faq__item">
+					<p class="faq__question-text">How does Raven ensure designs are ready for manufacturing?</p>
+				</div>
+				<div class="faq__item">
+					<p class="faq__question-text">Is Raven's design process sustainable?</p>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<p>© 2026.</p>
+	</footer>
+	<!-- <h2>БЕМ-Блок</h2>
+<p>
+	БЕМ-Блок — це блок, який містить інші блоки та елементи.
+	НЕЗАЛЕЖНИЙ, САМОДОСТАТНІЙ об'єкт. НЕ має впливати на оточення (сусідні об'єкти).
+</p>
+<h3>І'мя класу БЕМ-блоку:</h3>
+<ul>
+	<li>І'мя класу має відповідати змісту або конструкції БЕМ-блоку. <br>Перевірочне питання - "Що це?"</li>
+	<li>Англійска мова (Латиниця)</li>
+	<li>Нижній регістр</li>
+	<li>Якщо слів декілька, розділяємо дефісом (-).</li>
+	<li>При формуванні імені класу не має бути ієрархії</li>
+</ul> -->
+
+
+	<!-- <h2>БЕМ-Елемент</h2>
+<p>ЗАВЖДИ знаходиться всередені СВОГО БЕМ-блоку (вкладений). МОЖЕ впливати на оточення (сусідні об'єкти).</p>
+<h3>І'мя класу БЕМ-елементу:</h3>
+<ul>
+	<li>ЗАВЖДИ починається з імені першого в ієрархії батьківського БЕМ-блоку і відокремлюється двома підкресленнями (__).</li>
+	<li>І'мя має відповідати модифікаціям. Перевірочне питання - "Який? Що змінено?"</li>
+	<li>Англійска мова (Латиниця)</li>
+	<li>Нижній регістр</li>
+	<li>Якщо слів декілька, розділяємо дефісом (-).</li>
+	<li>При формуванні імені не має бути ієрархії</li>	
+</ul> -->
+
+	<!-- БЕМ-Модифікатор -->
+	<!-- 
+			Дозволяє вносити відмінності
+			для БЕМ-блоків або БЕМ-елементів
+			МОЖЕ впливати на оточення (сусідні об'єкти)
+
+			І'мя класу БЕМ-модифікатора:
+			0) ДОДАЄТЬСЯ до існуючого БЕМ-класу блоку або елементу.
+			1) ЗАВЖДИ починається з існуючого БЕМ-класу блоку або елементу 
+				і відокремлюється подвійним дфісом (--)
+			2) І'мя має відповідати модифікаціям. 
+				Перевірочне питання - "Який? Що змінено?"
+			3) Англійска мова (Латиниця)
+			4) Нижній регістр
+			5) Якщо слів декілька, розділяємо дефісом (-).
+			6) При формуванні імені не має бути ієрархії
+		-->
+
+	<!-- БЕМ-Мікс -->
+	<!-- 
+			Після того як ви опануєте блок елемент модифікатор, 
+			саме час використовувати мікси
+			Мікс - це одночасне використання і БЕМ-блоку 
+			і БЕМ-елементу для одного об'єкту.
+
+			Переваги міксу:
+			- вивільнення зрозумілих слів для нових елементів
+			- можливість викорістання CSS-властивостей, 
+				які впливають на оточення, фактично для БЕМ-блоку (БЕМ-елемент в ролі модифікатора)
+			- паралельне відокремлення певної структури в БЕМ-блок
+		-->
+
+	<!-- Часті слова -->
+	<!-- 
+				container - обмежуючий контейнер (block__container)
+				body, content - головна частина блоку (block__body)
+				row - рядок
+				column - колонка
+				link - посилання
+				title - заголовок
+				sub-title - підзаголовок
+				label - ще заголовок
+				text - текст
+				list - список
+				items - багато якихось елементів
+				item - будь-що
+				menu
+				block
+				button
+				picture, image, img
+				section
+				article
+				unit
+				actions, action
+				value
+				search
+				form
+				page
+				box
+			-->
+
+</body>
+
+</html>
