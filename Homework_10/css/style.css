@@ -166,7 +166,7 @@ absolute - абсолютне позиціонування.
 .position__item--absolute {
 	position: absolute;
 	left: 0;
-	top: 20;
+	top: 20px;
 }
 
 /*
