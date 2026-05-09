@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!-- Ukraine - uk -->
+<!-- Мова не визначена - zxx -->
+<!-- Коди мов https://html-css.co.ua/html/lang-kodu-mov/ -->
+<html lang="en">
+
+<head>
+	<!-- Кодування тексту -->
+	<meta charset="UTF-8">
+	<!-- Налаштування в'юпорту (адаптиву, масштабу тощо) -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Підключення віддалених шрифтів -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
+		rel="stylesheet">
+	<!-- Файл підключення локальних шрифтів -->
+	<link rel="stylesheet" href="css/fonts.css">
+	<!-- Файл обнулення стилів -->
+	<link rel="stylesheet" href="css/reset.css">
+	<!--Підключення основного файлу стилів -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Заголовок сторінки в браузері (вкладці) -->
+	<title>Homework_11</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<h1>Трансформації | Властивість transform</h1>
+			</div>
+		</header>
+		<main class="page">
+			<div class="page__container">
+				<div class="transform">
+					<div class="transform__container">
+						<h2 class="transform__title">2D Трансформації</h2>
+						<ul class="transform__list">
+							<li class="transform__item transform__item--t1">
+								<div class="transform__block">translate: 15% -5%</div>
+							</li>
+							<li class="transform__item transform__item--t3">
+								<div class="transform__block">translate: 0px 15px</div>
+							</li>
+							<li class="transform__item transform__item--scl1">
+								<div class="transform__block">scale: 1.1;</div>
+							</li>
+							<li class="transform__item transform__item--scl2">
+								<div class="transform__block">scale: 0.7;</div>
+							</li>
+							<li class="transform__item transform__item--r1">
+								<div class="transform__block">rotate: 25deg;</div>
+							</li>
+							<li class="transform__item transform__item--r2">
+								<div class="transform__block">rotate: -70deg;</div>
+							</li>
+							<li class="transform__item transform__item--sk1">
+								<div class="transform__block">skew(10deg, 10deg);</div>
+							</li>
+							<li class="transform__item transform__item--origin">
+								<div class="transform__block">transform-origin: 0 0;</div>
+							</li>
+						</ul>
+						<h2 class="transform__title">3D Трансформації</h2>
+						<ul class="transform__list transform__list--3d">
+							<li class="transform__item transform__item--rot1">
+								<div class="transform__block">rotateY(45deg)</div>
+							</li>
+							<li class="transform__item transform__item--rot3">
+								<div class="transform__block">rotateX(45deg)</div>
+							</li>
+							<li class="transform__item transform__item--rot2">
+								<div class="transform__block">transform: rotate3d(100, 40, 80, 60deg);</div>
+							</li>
+							<li class="transform__items transform__item--rot4">
+								<div class="transform__block">rotateX(-45deg);+ у батьківського елемента transform-style:
+									preserve-3d;</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!-- Домашнє завдання -->
+			<div class="picture">
+
+				<div class="scene">
+					<div class="scene__blob"></div>
+					<div class="scene__road"></div>
+					<div class="scene__shadow"></div>
+
+					<div class="car">
+						<div class="car__body">
+							<div class="car__cabin">
+								<div class="car__window">
+									<div class="car__headrest car__headrest--left"></div>
+									<div class="car__headrest car__headrest--right"></div>
+								</div>
+							</div>
+
+							<div class="car__mirror car__mirror--left"></div>
+							<div class="car__mirror car__mirror--right"></div>
+
+							<div class="car__headlight car__headlight--left"></div>
+							<div class="car__headlight car__headlight--right"></div>
+
+							<div class="car__bumper">
+								<div class="car__logo"></div>
+								<div class="car__grille"></div>
+								<div class="car__fender-light car__fender-light--left"></div>
+								<div class="car__fender-light car__fender-light--right"></div>
+							</div>
+
+						</div>
+						<div class="car__wheel car__wheel--left"></div>
+						<div class="car__wheel car__wheel--right"></div>
+
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<a href="#Top" class="footer__link">Вгору</a>
+		</footer>
+	</div>
+</body>
+
+</html>
