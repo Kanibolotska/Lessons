@@ -1,0 +1,571 @@
+
+/* Значення за замовченням  */
+body {
+	/* font-family: "InterDisplay"; */
+	font-family: "Poppins", sans-serif;
+
+	background-color: #333;
+	color: #fff;
+}
+/* ------------------------------------------------------------------- */
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+}
+/* ------------------------------------------------------------------- */
+[class*="__container"] {
+	max-width: 900px;
+	margin: 0 auto;
+}
+/* ------------------------------------------------------------------- */
+.page {
+	padding-top: 50px;
+}
+/* ------------------------------------------------------------------- */
+.header__container {
+	text-align: center;
+	margin: 30px auto;
+	font-size: 30px;
+	text-shadow: 0 0 10px #000;
+	text-decoration: underline;
+	text-decoration-color: #de5e9590;
+	text-underline-offset: 10px;
+}
+/*
+	Веб-анімація для (пріорітети):
+	1. Привернення уваги до... -> продажі (бенефітів)
+	2. Викликати цікавість, забезпечити зручність
+	3. WOW-ефекту (крутість)
+	4. Руху (Мультиплікації, ігри)
+*/
+
+/*
+Основна задача веб-анімації - це створити 
+влучний настрій (атмоферу) на сайті відповідно дизайну, 
+потенційному настрою відвідувачів (клієнтів), типу продукту тощо
+Для привернення уваги конкретним елементам з подальшою дією
+*/
+
+/* ============================== */
+/* CSS – переходи */
+/* ============================== */
+
+/*
+CSS – переходи чи CSS – transitions
+Використовуються для пожвавлення нашої 
+інтерфейсу та підкреслення акцентів.
+Можуть застосовуватися всім елементам 
+і навіть до псевдоэлементам. 
+Що, у свою чергу, призводить до поліпшення 
+взаємодії з користувачем,як правило шляхом приємної 
+анімованої реакції на його дії. 
+Наприклад – наведення та натискання на кнопку.
+Також властивості transition можна використовувати для 
+побудови нескладних сценаріїв анімації. Фактично,
+CSS – переходи забезпечують зміну значень властивостей 
+із певною анімацією та сценарієм.
+
+!! Анімувати ми можемо лише ті значення,
+	які можна представити у вигляді числа
+*/
+
+/*
+transition-duration
+Визначає проміжок часу, 
+протягом якого має здійснюватись перехід. 
+Власне - тут ми вказуємо час за яке 
+одне значення властивості переходить (анімується)
+в інше. Властивість не успадковується.
+
+transition-duration: 0;
+*/
+
+/* 1000ms = 1s */
+/* 300ms = 0.3s */
+
+/*
+Зазвичай, плавний перехід налаштовую у межах:
+Від 0.2 до 0.8s (200 - 800ms)
+Беспечні межі (не зробити біду):
+Від 0.3 до 0.5s (300 - 500ms)
+*/
+
+/* 
+Від того куди саме ми вказуємо час переходу, 
+змінюється поведінка
+ */
+
+/*
+	transition-property
+	Містить назву CSS-властивостей,
+	до яких буде використано ефект переходу. 
+	Значення властивості може містити як одну 
+	властивість, так і список властивостей 
+	через кому. Властивість не успадковується.
+
+	За замовченням
+	transition-property: all;
+*/
+
+/*
+	transition-delay
+	Затримка виконання переходу. Дозволяє зробити 
+	так, щоб зміна відбувалася не миттєво,
+	а з деякою затримкою. Час затримки переходу 
+	вказується у секундах або мілісекундах. 
+	Властивість не успадковується.
+*/
+/*
+	transition-timing-function
+	Задає стиль нашого переходу,
+	тобто якийсь сценарій,
+	за яким здійсняться анімація.
+
+	Генератор:
+	https://cubic-bezier.com/
+*/
+
+/*
+	Універсальний запис
+	transition
+
+	Порядок запису значень через пробіл:
+	transition-property
+	transition-duration
+	transition-timing-function
+	transition-delay
+*/
+
+/*
+will-change - допомагає браузеру краще віпрацювати анімацію
+*/
+
+/* ========================== */
+/* CSS animation & @keyframes */
+/* ========================== */
+
+
+/*
+Як і CSS властивість плавних переходів transition,
+про яку ми говорили в уроці,
+властивість animation покликана зробити наш інтерфейс 
+динамічніший, оживити його для кращої взаємодії з 
+користувачем та створення WOW ефекту. 
+
+Але на відміну від CSS переходів,
+створення анімації базується на ключових кадрах @keyframes,
+які дозволяють автоматично відтворювати та повторювати 
+ефекти протягом заданого часу, а також зупиняти 
+анімацію за певною подією. 
+
+Іншими словами, використання конструкції animation 
+та @keyframes дозволяє нам створювати більш складні 
+сценарії анімацій.
+*/
+
+/* Сценарії @keyframes (ключові кадри) */
+
+/* 
+name (ім'я сценарію) не може містити 
+пробіли та інші знаки крім дефісу (-) 
+*/
+
+/* for ex. 1000ms */
+/* Чекаємо 500ms перед зміною */
+/* @keyframes move-with-pause {
+	0%,
+	50% {
+		left: 0;
+	}
+	100% {
+		left: 200px;
+	}
+} */
+
+/*
+	animation-name
+	Визначає список анімацій (ключових кадрів),
+	що застосовуються до елемента. Можна вказати через кому. 
+	Причому пріоритет останній запис.
+	*/
+/* animation-name: none; */
+
+/*
+	animation-duration
+	Відповідає за тривалість анімації.
+*/
+/*
+	animation-timing-function
+	Встановлює сценарій розвитку анімації між ключовими кадрами.
+*/
+
+
+/*
+	animation-delay
+	Відповідає за затримку перед відтворенням.
+*/
+
+/*
+	animation-iteration-count
+	Відповідає за повтор відтворення ключових кадрів.
+*/
+/*
+	animation-direction
+	Визначає напрямок та тип відтворення ключових кадрів.
+	normal - за замовченням
+	reverse -  в зворотньому напрямку
+	alternate - кожна парна ітерація буде відбуватись 
+	у зворотньому напрямку
+	alternate-reverse - кожна непарна ітерація буде 
+	відбуватись у зворотньому напрямку
+*/
+
+/* .circle {
+	animation-name: move;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+} */
+
+/*
+	animation-play-state
+	Дозволяє запускати або зупиняти анімацію за подією.
+	animation-play-state: running;
+*/
+
+/*
+	animation-fill-mode
+	Визначає,
+	які значення анімованих css властивостей 
+	застосовуються до об'єкта після завершення анімації.
+*/
+
+/*
+	Універсальний запис
+	animation
+
+	Порядок запису властивостей:
+	animation-name
+	animation-duration
+	animation-timing-function
+	animation-iteration-count
+	animation-direction
+	animation-play-state
+	animation-delay
+	animation-fill-mode
+
+/* Домашнє завдання */
+
+.car__body {
+   position: absolute;
+   width: 320px;
+   height: 200px;
+   background: linear-gradient(0deg,rgba(28, 94, 133, 1) 0%, rgba(51, 161, 225, 1) 100%);
+   bottom: 30px;
+   left: 50%;
+   transform: translateX(-50%);
+   border-radius: 40px 40px 20px 20px;
+}
+.car__cabin {
+   position: absolute;
+   width: 280px;
+   height: 90px;
+   background: linear-gradient(0deg,rgba(51, 161, 225, 1) 0%, rgba(28, 94, 133, 1) 100%);
+   top: -85px;
+   left: 50%;
+   transform: translateX(-50%);
+   border-radius: 70px 70px 5px 5px;
+   overflow: hidden;
+   clip-path: polygon(15% 0%, 85% 0%, 100% 100%, 0% 100%);
+}
+.car__window {
+   position: absolute;
+   width: calc(100% - 20px);
+   height: calc(100% - 20px);
+   background: radial-gradient(circle at 30% 30%, #ffffff5f, #a6b1e1ab 30%, #2b2b3f);
+	border: 4px solid #2b2b3f;
+	box-shadow: inset 0 10px 20px rgba(0,0,0,0.5);
+   top: 10px;
+   left: 10px;
+   border-radius: 60px 60px 5px 5px;
+   overflow: hidden;
+	clip-path: polygon(15% 0%, 85% 0%, 100% 100%, 0% 100%);
+}
+.car__headrest {
+   position: absolute;
+   width: 50px;
+   height: 45px;
+   background: radial-gradient(circle,rgba(20, 28, 61, 0.98) 7%, rgba(50, 52, 61, 1) 100%);
+   top: 15px;
+   border-radius: 20px 20px 3px 3px;
+}
+.car__headrest--left { 
+	left: 40px; 
+}
+.car__headrest--right { 
+	right: 40px; 
+}
+
+.car__headlight {
+   position: absolute;
+   width: 75px;
+   height: 40px;
+   background: radial-gradient(circle at 30% 30%, #fff, #a6b1e1);
+   top: 70px; /* Середина кузова */
+   box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+   border-radius: 0px 30px 10px 10px; 
+}
+
+.car__headlight--right {
+   right: 20px;
+   border-radius: 90px 30px 50px 10px;
+}
+
+.car__headlight--left { 
+	left: 20px; 
+	border-radius: 30px 90px 10px 50px;
+}
+
+.scene { 
+	position: relative; 
+	width: 900px; 
+	height: 600px; 
+	margin: 100px auto;  
+}
+.scene__blob {
+   position: absolute; 
+	width: 450px; 
+	height: 250px; 
+   background-color: rgba(247, 218, 196, 0.7); 
+   border-radius: 120px 200px 50px 180px; 
+   top: 90px; 
+	left: 200px; 
+	z-index: -1; 
+   transform: translateX(-50%); 
+	animation:
+	blob-animation 6s infinite ease-in-out, 
+   blob-glow 3s infinite ease-in-out;
+}
+@keyframes blob-animation {
+   0%, 100% {
+      border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+      transform: scale(1);
+      opacity: 0.7;
+		box-shadow: 0 0 40px 20px rgba(230, 222, 216, 0.3);
+   }
+   33% {
+      border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+      transform: scale(1.05);
+      opacity: 1;
+		box-shadow: 0 0 20px 5px rgba(247, 218, 196, 0.3);
+   }
+   66% {
+      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+      transform: scale(0.95);
+      opacity: 0.6;
+		box-shadow: 0 0 60px 15px rgba(247, 218, 196, 0.7);
+   }
+}
+.scene__blob {
+   animation: blob-animation 6s infinite ease-in-out;
+   transition: all 0.5s ease;
+}
+.scene__shadow {
+   position: absolute; 
+	width: 55%; 
+	height: 10px; 
+   background: rgba(0, 0, 0, 0.348); 
+   bottom: 15px;
+	left: 10%; 
+   border-radius: 50%; 
+	z-index: -1; 
+}
+
+.car__body {
+   position: absolute; width: 320px; height: 200px; 
+   background-color: #33a1e1; bottom: 30px; left: 50%; 
+   transform: translateX(-50%); 
+}
+
+.car__grille {
+   position: absolute;
+   width: 190px;
+   height: 50px;
+   background: repeating-linear-gradient(to bottom, #1d212b,#1d212b 10px, transparent 10px, transparent 20px);
+   background-color: #333339db; 
+   bottom: 25px;
+   left: 50%;
+   transform: translateX(-50%);
+	border: 6px solid #0d0d0f;
+   border-radius: 20px 20px 40px 40px;
+   box-shadow: inset 0 -10px 20px rgba(0,0,0,0.5);
+   clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 10% 100%);
+}
+
+.car__mirror {
+   position: absolute;
+   width: 50px;
+   height: 35px;
+   top: -27px; /* Вище рівня фар */
+}
+
+/* Ставимо ліве дзеркало і трішки висуваємо за межі кузова */
+.car__mirror--left {
+   left: -25px;
+   background: linear-gradient(-90deg,rgba(51, 161, 225, 1) 35%, rgba(28, 94, 133, 1) 100%);
+   border-radius: 30px 60px 20px 60px;
+}
+
+/* Ставимо праве дзеркало */
+.car__mirror--right {
+   right: -25px;
+   background: linear-gradient(90deg,rgba(51, 161, 225, 1) 35%, rgba(28, 94, 133, 1) 100%);
+   border-radius: 60px 30px 60px 20px;
+}
+
+.car__wheel {
+   position: absolute;
+   width: 60px;
+   height: 80px;
+   background-color: #2b2b3f;
+   bottom: -10px;
+   border-radius: 15px;
+   z-index: -1; /* Ховаємо під синій кузов */
+}
+
+.car__wheel--left {
+	left: 105px; 
+}
+.car__wheel--right { 
+	right: 105px; 
+}
+
+/* Маленькі вогні в кутах бампера */
+.car__fender-light {
+   position: absolute;
+   width: 35px;
+   height: 25px;
+   background-color: #a6b1e1; /* Світло-синій */
+   bottom: 15px;
+}
+
+.car__fender-light--left {
+   left: 15px;
+   border-radius: 5px 30px 5px 15px;
+   background: linear-gradient(-90deg,rgba(47, 51, 69, 1) 0%, rgba(99, 99, 107, 1) 100%);
+}
+
+.car__fender-light--right {
+   right: 15px;
+   border-radius: 30px 5px 15px 5px;
+   background: linear-gradient(90deg,rgba(47, 51, 69, 1) 0%, rgba(99, 99, 107, 1) 100%);
+}
+
+/* Центральна лінія на бампері */
+.car__logo {
+   position: absolute;
+   width: 120px;
+   height: 15px;
+   background-color: #2f33459b;
+   top: 95px;
+   left: 50%;
+   transform: translateX(-50%);
+   border-radius: 4px;
+}
+
+
+@keyframes car-shake {
+   0%, 100% { transform: translateX(-50%) translateY(0); }
+   50% { transform: translateX(-50%) translateY(-3px); } /* Машина трохи підстрибує */
+}
+
+
+
+
+
+
+.car {
+   position: absolute;
+   bottom: 30px;
+   left: 50%;
+   transform: translateX(-50%); 
+    /* infinite — щоб рухалась постійно */
+    /* ease-in-out — щоб підстрибувала м'яко */
+   animation: car-shake 0.3s infinite ease-in-out;
+}
+.scene__shadow {
+   animation: car-shake 0.3s infinite ease-in-out;
+	position: absolute;
+   bottom: 12px;
+   left: 50%;
+}
+
+@keyframes road-move-vertical {
+   from { background-position: 0 0; }
+   to { background-position: 0 40px; } /* Рух розмітки вниз по осі Y */
+}
+
+@keyframes lights-on {
+   0%, 100% { opacity: 0.8; filter: brightness(1); }
+   50% { opacity: 1; filter: brightness(1.5) drop-shadow(0 0 15px white); }
+}
+
+.car__headlight {
+   animation: lights-on 1s infinite alternate;
+}
+
+.road-area {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   bottom: 0;
+    /* perspective — вона змушує об'єкти ставати меншими, коли вони "далі" від нас */
+   perspective: 400px;
+   z-index: -1;
+}
+
+.scene__road-line {
+   position: absolute;
+   width: 20px; /* Збільшуємо товщину, бо 3D її "з'їсть" */
+   height: 200%; /* Робимо лінію довшою, щоб вона йшла до горизонту */
+   left: 50%;
+   bottom: 0;
+   background: linear-gradient(to bottom, #000 20%, transparent 50%);
+   background-size: 100% 80px;
+   transform-origin: bottom;
+   animation: road-move-vertical 0.4s infinite linear;
+}
+
+.scene__road-line--left {
+    /* rotateX(60deg) - кладе лінію на землю */
+    /* translateX - відсуває вбік */
+   transform: translateX(-300px) rotateX(70deg);
+}
+
+.scene__road-line--right {
+   transform: translateX(300px) rotateX(70deg);
+}
+
+@keyframes road-move-vertical {
+   from { background-position: 0 0; }
+   to { background-position: 0 80px; }
+}
+
+.footer	{
+	text-align: center;
+}
+
+.footer__link {
+	display: block;
+	padding: 20px;
+	background-color: #080303;
+	color: #fff;
+	text-decoration: underline;
+	text-decoration-color: #de5e9590;
+	text-underline-offset: 10px;
+}
+
+.footer__link:hover {
+	color: #de5e9590;
+}
