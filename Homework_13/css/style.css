@@ -1,0 +1,533 @@
+
+/* Значення за замовченням  */
+
+.header-title {
+	font-family: "Poppins", sans-serif;
+	font-size: 30px;
+	font-weight: 700;
+	color: #000;
+	text-align: center;
+	margin: 30px;
+	}
+.header
+{
+	background-color: #FFF3E3;
+}
+/* ------------------------------------------------------------------- */
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	font-family: "Poppins", sans-serif;
+}
+.wrapper > main {
+	flex-grow: 1;
+}
+/* ------------------------------------------------------------------- */
+[class*="__container"] {
+	max-width: 1116px;
+	margin: 0 auto;
+}
+
+/* ------------------------------------------------------------------- */
+
+/*
+FLEX (Flexbox) - це цілий модуль,
+що містить у собі набір властивостей 
+та їх значень як для батьківського 
+об'єкту (flex-контейнера), так і для 
+його дочірніх елементів (flex-елементів). 
+
+Використовується для побудови конструкцій -
+упорядкування контенту в рядки та колонки,
+та керування ними.
+
+Основною перевагою гнучкої FLEX розмітки 
+є можливість змінювати ширину/висоту простір 
+навколо та порядок flex-елементів, для того, 
+щоб найкращим чином заповнити доступний простір 
+flex-контейнера та полегшувати адаптивність
+*/
+
+/* FLEX-контейнер */
+.flex {
+	padding: 15px;
+	background-color: #794f45;
+
+	/* height: 500px; */
+
+	/* Властивості FLEX-контейнера */
+
+	/* display: inline-flex; */
+	display: flex;
+
+	/* 
+	display: flex/inline-flex;
+	1) Визначає flex-контейнер,
+	блочний або блочний-рядковий (залежить від значення). 
+	2) Перетворює всі свої беспосередні дочірні 
+	елементи у flex-елементи.
+	3) Будує конструкцію
+	*/
+
+	/*
+	flex-wrap
+	Визначає, чи зможуть flex-елементи переміщатися 
+	на наступні рядки, коли перестають поміщатися 
+	всередині flex-контейнера.
+
+	nowrap - (за замовченням) Flex-елементи не можуть 
+	переміщатися на наступні рядки flex-контейнера.
+	wrap - Flex-елементи зможуть переміщатися на 
+	наступні рядки flex-контейнера.
+	wrap-reverse - Flex-елементи зможуть переміщатися 
+	на наступні рядки flex-контейнера, 
+	але у зворотному порядку.
+	*/
+	flex-wrap: wrap;
+
+	/*
+	justify-content
+
+	Визначає вирівнювання (flex-елементів) вздовж основної осі 
+	(напрямок залежить від значення властивості flex-direction).
+	
+	flex-start - Значення за замовчуванням (не потрібно вказувати). 
+	Flex-елементи притискаються до початку осі.
+	flex-end - Flex-елементи притискаються вкінець осі.
+	center - Flex-елементи розташовуються в центрі основної осі.
+
+	space-between - Flex-елементи розміщуються 
+	поступово по основній осі. 
+	Перший елемент знаходиться на початку осі,
+	останній елемент знаходиться наприкінці осі.
+	Між елементами постійно однаковий простір
+	space-around - Flex-елементи розташовуються рівномірно 
+	по основній осі. До кожного flex-елементу 
+	додається простір ліворуч і праворуч.
+	space-evenly - Flex-елементи розташовуються рівномірно по 
+	основній осі з однаковим простором навколо них.
+	*/
+
+	/* justify-content: flex-start; */
+
+	/*
+	align-items
+	Визначає вирівнювання вздовж поперечної (другорядної) осі 
+	(напрямок залежить від значення властивості flex-direction).
+	stretch - Значення за замовчуванням (не потрібно вказувати). 
+	Flex-елементи розтягуються весь розмір поперечної осі 
+	flex-контейнера.
+	flex-start - Flex-елементи притискаються до 
+	початку поперечної осі.
+	flex-end - Flex-елементи притискаються вкінець поперечної осі.
+	center - Flex-елементи по центру
+	*/
+
+	align-items: center;
+
+	/* 
+	gap
+	Проміжок (відстань) МІЖ FLEX-елементами
+	(Не залежить від flex-direction)
+	*/
+
+	gap: 20px;
+
+	/* Між колонками */
+	/* column-gap: 15px; */
+	/* Між рядками */
+	/* row-gap: 30px; */
+
+	/* gap: 30px 15px; */
+
+	/*
+	flex-direction
+	Встановлює основну вісь,
+	таким чином визначає напрямок flex-елементів,
+	розташованих у flex-контейнері.
+	row - Значення за замовчуванням (не потрібно вказувати). 
+	Основна вісь горизонтальна. Всі flex-елементи 
+	розташуються ліворуч по горизонталі.
+	row-reverse - змінює напрям горизонтального вектору
+	column - змінює головну вісь на вертикальну (зверху вниз)
+	другорядна зліва на право.
+	column-reverse - змінює головну вісь на вертикальну (знизу вверх)
+	другорядна зліва на право.
+	*/
+	/* flex-direction: column; */
+
+	/* flex-direction: row-reverse; */
+
+	/* flex-direction: column-reverse; */
+
+	/* Поєднання flex-wrap flex-direction */
+	/* flex-flow: flex-wrap flex-direction */
+	/* flex-flow: wrap column; */
+}
+
+/* 
+Властивості FLEX – елементів. 
+Застосовуються для flex-елемента,
+дочірнього об'єкта flex-контейнера
+*/
+
+/* FLEX-елемент */
+.flex__item {
+	padding: 25px;
+	background-color: #77608d;
+	font-size: 20px;
+
+	/*
+	flex-basis - Визначає базовий розмір елемента 
+	за замовченням, до розподілу простору, що залишився. 
+	Значення можуть бути у відсотках пікселях тощо.
+	auto (за замовченням) - розмір по контенту
+
+	flex-grow - 0 заборонено. 1 дозволено. (за замовченням - 0) 
+	Визначає можливість елемента збільшуватись 
+	(більше ніж flex-basis)
+	у розмірі, при необхідності заповнюючи весь 
+	flex-контейнер.
+
+	flex-shrink - 0 заборонено. 1 дозволено. (за замовченням - 1)
+	Визначає можливість елемента зменшуватись у розмірі 
+	(меньше ніж flex-basis)
+	*/
+
+	/* flex-basis: 250px;
+	flex-grow: 0;
+	flex-shrink: 0; */
+
+	/* Універсальна властівість FLEX */
+	/* flex: flex-grow flex-shrink flex-basis */
+	/* flex: 1 1 220px; */
+
+	/*
+	order
+	Керує порядком,
+	в якому розташовуються flex-елементи 
+	всередині flex-контейнера.
+	При зміні порядку хоча б для одного flex-елементу,
+	варто прописувати order усім flex-елементам,
+	навіть тим які лишаються на своєму місці.
+	*/
+}
+/* Практичний приклад */
+
+/* .items {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 80px 54px;
+}
+.items__item {
+	flex-basis: 280px;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+
+	border-radius: 25px;
+	background-color: #fff;
+	overflow: hidden;
+	box-shadow: 0 32px 34px 0 rgba(0, 0, 0, 0.13);
+}
+.item__link-image {
+	display: block;
+}
+.item__image {
+	width: 100%;
+} */
+/* .item__body {
+	padding: 30px;
+	color: #000;
+
+	flex-grow: 1;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.item__link:not(:last-child) {
+	margin-bottom: 15px;
+}
+.item__link:hover {
+	text-decoration: underline;
+}
+
+.item__title {
+	font-size: 20px;
+	font-weight: 700;
+}
+.item__text {
+	line-height: 1.2;
+	flex-grow: 1;
+}
+.item__text:not(:last-child) {
+	margin-bottom: 20px;
+}
+.item__text p:not(:last-child) {
+	margin-bottom: 5px;
+}
+.item__content-link {
+	color: blue;
+	font-size: 18px;
+	font-weight: 700;
+}
+.item__content-link:hover {
+	text-decoration: underline;
+} */
+
+
+
+/* Домашнє завдання */
+.range__container{
+	max-width: 1183px;
+	margin: 56px auto;
+}
+
+.range__header{
+	margin-bottom: 62px;
+}
+.range__title{
+	font-size: 32px;
+	font-weight: 700;
+	color: #333333;
+	line-height: 48px;
+}
+.range__subtitle{
+	font-size: 18px;
+	font-weight: 400;
+	color: #666666;
+	margin-bottom: 20px;
+	line-height: 30px;
+}
+.range__items{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+   justify-content: center;
+}
+.range__label{
+	font-size: 24px;
+	font-weight: 600;
+	color: #333333;
+	margin-top: 30px;
+	transition: color 1s ease, transform 0.5s ease;
+}
+
+.range__image {
+   width: 100%;
+   height: 480px;
+   border-radius: 10px;
+   overflow: hidden;
+}
+
+.range__img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   transition: transform 0.5s ease;
+}
+.range__item:hover .range__img {
+   transform: scale(1.05);
+}
+.range__item:hover .range__label {
+   color: #B88E2F;
+   transform: scale(1.15);
+   text-decoration: underline;
+}
+.range__item {
+   /* 1 1 350px означає: дозволяємо рости, дозволяємо стискатися, а базова ширина однієї картки для старту — 350px */
+   flex: 1 1 350px;
+   /* Обмежуємо максимальну ширину картки розміром картинки (381px), 
+       щоб коли на рядку залишиться одна картка, вона не розтягнулася на весь екран */
+   max-width: 381px;
+}
+
+
+/* другий блок */
+.products__title{
+	font-size: 40px;
+	font-weight: 700;
+	color: #333333;
+	line-height: 48px;
+	margin-bottom: 32px;
+}
+
+/* карта для продукта */
+.product-card{
+	position: relative;
+	background-color: #F4F5F7;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	flex: 1 1 285px;
+	max-width: 285px;
+	gap: 32px;
+}
+.product-card__visual {
+   position: relative;
+   width: 100%;
+   height: 301px;
+   overflow: hidden;
+}
+.product-card__image {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+/* плашка знижки */
+.product-card__badge {
+   position: absolute;
+   top: 24px;
+   right: 24px;
+   width: 48px;
+   height: 48px;
+   border-radius: 50%;
+	display: flex;
+   align-items: center;
+   justify-content: center;
+	font-weight: 500;
+   font-size: 15px;
+   color: #ffffff;
+   z-index: 2;
+}
+.product-card__badge--sale {
+   background-color: #E97171;
+}
+.product-card__badge--new {
+   background-color: #2EC1AC;
+}
+
+
+/* темний хавер */
+.product-card__overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(58, 58, 58, 0.72);
+	display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 24px;
+	opacity: 0;
+   visibility: hidden;
+   transition: opacity 0.3s ease, visibility 0.3s ease;
+   z-index: 3;
+}
+/* Кнопка "Add to cart" */
+.product-card__btn-cart {
+   background-color: #ffffff;
+   color: #B88E2F; /* Золотисто-коричневий колір тексту */
+   border: none;
+   padding: 12px 50px;
+   font-weight: 600;
+   font-size: 16px;
+   cursor: pointer;
+   transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.product-card__btn-cart:hover {
+   background-color: #B88E2F;
+   color: #ffffff;
+}
+/* Контейнер для нижніх посилань (Share, Compare, Like) */
+.product-card__actions {
+   display: flex;
+   gap: 20px;
+}
+.product-card__action-link {
+   color: #ffffff;
+   font-weight: 600;
+   font-size: 16px;
+   text-decoration: none;
+   display: flex;
+   align-items: center;
+   gap: 8px; /* Відступ між майбутньою іконкою і текстом */
+	transition: opacity 0.3s ease;
+   
+}
+.product-card__action-icon {
+   width: 16px;
+   height: 16px;
+   fill: #ffffff; /* Фарбує SVG у білий колір */
+}
+.product-card__action-link:hover {
+   opacity: 0.8;
+}
+.product-card:hover .product-card__overlay {
+   opacity: 1;
+   visibility: visible;
+}
+
+/* текст на картці */
+.product-card__content {
+	padding: 16px 16px 30px 16px;
+	text-align: left;
+}
+.product-card__title{
+	font-weight: 600;
+   font-size: 24px;
+   color: #3A3A3A;
+   margin-bottom: 8px;
+}
+.product-card__subtitle {
+   font-weight: 500;
+   font-size: 16px;
+   color: #898989;
+   margin-bottom: 8px;
+}
+.product-card__prices {
+   display: flex;
+   align-items: center;
+   gap: 16px;
+}
+.product-card__price--current {
+   font-weight: 600;
+   font-size: 20px;
+   color: #3A3A3A;
+}
+
+.product-card__price--old {
+   font-weight: 400;
+   font-size: 16px;
+   color: #B0B0B0;
+   text-decoration: line-through; /* Перекреслює стару ціну */
+}
+
+.products__container{
+	max-width: 1236px;
+	margin: 56px auto;
+}
+.products__items{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 32px;
+	justify-content: center;
+	margin-bottom: 32px;
+}
+
+/* кнопка Show More */
+.product-btn{
+	display: block;
+   margin: 0 auto;
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 150%;
+   color: #b88e2f;
+   background-color: #fff;
+   padding: 12px 78px;
+	margin-bottom: 69px;
+	border: 1px solid #b88e2f;
+	cursor: pointer;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+.product-btn:hover{
+	background-color: #b88e2f;
+	color: #fff;
+}
