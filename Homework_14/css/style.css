@@ -1,0 +1,191 @@
+/* @import url("reset.css"); */
+
+/* Локальне підключення шрифтів */
+/* @import url("fonts.css"); */
+
+/* Підключення віддалених шрифтів */
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700&display=swap"); */
+
+/* Значення за замовченням  */
+.header{
+	background-color: #7a956b;
+}
+
+h1 {
+font-family: "Poppins", sans-serif;
+   font-size: 30px;
+   font-weight: 700;
+   color: #e0dddd;
+   text-align: center;
+   margin: 30px;
+}
+/* ------------------------------------------------------------------- */
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main {
+	flex-grow: 1;
+}
+/* ------------------------------------------------------------------- */
+[class*="__container"] {
+	max-width: 1116px;
+	margin: 0 auto;
+}
+[class*="--margin"] {
+	margin-bottom: 20px;
+}
+/* ------------------------------------------------------------------- */
+.page {
+	padding: 50px;
+}
+/* ------------------------------------------------------------------- */
+.contact__container{
+	font-family: "Poppins", sans-serif;
+}
+.form{
+	max-width: 635px;
+	width: 100%;
+	margin-inline: auto;
+	margin-bottom: 50px;
+}
+.form__list{
+	display: flex;
+	flex-direction: column;
+	gap: 36px;
+	margin-bottom: 50px;
+}
+.form__label{
+	width: 100%;
+	position: relative;
+}
+.form__input, .form__textarea{
+	width: 100%;
+   border: 1px solid #9f9f9f;
+   border-radius: 10px;
+   padding-block: 25px;
+   padding-inline: 30px;
+	font-family: "Poppins", sans-serif;
+}
+.form__title{
+	display: block;
+	margin-bottom: 22px;
+	font-weight: 500;
+	color: #000000;
+}
+.form__input--textarea {
+   min-height: 120px; /* Зад ає базову висоту для великого повідомлення */
+   resize: vertical; /* Дозволяє користувачу тягнути поле тільки вниз, щоб не ламати ширину сайту */
+}
+.form__btn{
+	background-color: #B88E2F;
+   border: none;
+   border-radius: 10px;
+   width: 237px;
+	height: 55px;
+   font-weight: 400;
+	color: #ffffff;
+   cursor: pointer;
+	transition: background-color 0.5s;
+}
+.form__btn:hover{
+	background-color: #F9F1E7;
+	color: #000000;
+}
+.form__btn:active{
+	box-shadow: 0 0 10px #bcb2a5;
+}
+
+/* №2 */
+
+.form-product__sizes{
+	display: flex;
+	gap: 16px;
+}
+/* .form-product__size-radio{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+} */
+.form-product__size-radio {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   overflow: hidden;
+   clip: rect(0 0 0 0);
+}
+.form-product__text{
+	display: flex;
+   align-items: center;
+   justify-content: center;
+	width: 30px;
+	height: 30px;
+	border-radius: 5px;
+	background-color: #F9F1E7;
+	font-size: 13px;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+.form-product__size-radio:checked + .form-product__text {
+   background-color: #B88E2F;
+   color: #ffffff;
+	box-shadow: 0 0 10px #b8aa98;
+	transform: scale(1.1);
+}
+
+/* color */
+.form-product__colors {
+   display: flex;
+   gap: 16px;
+}
+.form-product__label {
+   display: flex;
+   cursor: pointer;
+}
+.form-product__color-radio {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   overflow: hidden;
+   clip: rect(0 0 0 0);
+}
+.form-product__color-circle {
+   display: block;
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   border: 2px solid transparent; 
+   transition: transform 0.2s ease, border-color 0.2s ease;
+}
+.form-product__color-circle--purple {
+   background-color: #816DFA;
+}
+.form-product__color-circle--black {
+   background-color: #000000;
+}
+.form-product__color-circle--orange {
+   background-color: #B88E2F;
+}
+.form-product__color-radio:checked + .form-product__color-circle {
+   transform: scale(1.1);
+   box-shadow: 0 0 10px #b8aa98;
+}
+
+.form-product__title {
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	color: #9F9F9F;
+	display: block;
+	margin-bottom: 12px;
+}
+.form-product__item{
+	display: block;
+	margin-bottom: 18px;
+}
+.product__form{
+	max-width: 635px;
+	width: 100%;
+	margin-inline: auto;
+}

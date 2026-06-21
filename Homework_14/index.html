@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!-- Ukraine - uk -->
+<!-- Мова не визначена - zxx -->
+<!-- Коди мов https://html-css.co.ua/html/lang-kodu-mov/ -->
+<html lang="en">
+
+<head>
+	<!-- Кодування тексту -->
+	<meta charset="UTF-8">
+	<!-- Налаштування в'юпорту (адаптиву, масштабу тощо) -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Підключення віддалених шрифтів -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+	<!-- Файл підключення локальних шрифтів -->
+	<link rel="stylesheet" href="css/fonts.css">
+	<!-- Файл обнулення стилів -->
+	<link rel="stylesheet" href="css/reset.css">
+	<!--Підключення основного файлу стилів -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Заголовок сторінки в браузері (вкладці) -->
+	<title>Homework_14</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<h1>Форми</h1>
+		</header>
+		<main class="page">
+			<div class="contact">
+				<div class="contact__container">
+					<div class="contact__form">
+						<form method="post" action="#" class="form">
+							<div class="form__list">
+								<div class="form__item">
+									<label class="form__label">
+										<span class="form__title">Your name</span>
+										<input autocomplete="off" minlength="2" required placeholder="Abc" name="username"
+											type="text" class="form__input">
+									</label>
+								</div>
+								<div class="form__item">
+									<label class="form__label">
+										<span class="form__title">Email address</span>
+										<input type="email" required placeholder="Abc@def.com" autocomplete="off" name="email"
+											class="form__input">
+									</label>
+								</div>
+								<div class="form__item">
+									<label class="form__label">
+										<span class="form__title">Subject</span>
+										<input type="text" placeholder="This is an optional" name="subject" class="form__input">
+									</label>
+								</div>
+								<div class="form__item">
+									<label class="form__label">
+										<span class="form__title">Message</span>
+										<textarea placeholder="Hi! i’d like to ask about" name="message" maxlength="500" required
+											class="form__input form__input--textarea"></textarea>
+									</label>
+								</div>
+							</div>
+							<div class="form__btn-wrapper">
+								<button type="submit" class="form__btn">Submit</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="product">
+				<div class="product__container">
+					<form class="product__form form-product" method="post" action="#">
+						<div class="form-product__item">
+							<span class="form-product__title">Size</span>
+							<div class="form-product__sizes">
+								<label class="form-product__label">
+									<input type="radio" name="size" value="l" class="form-product__size-radio" checked>
+									<span class="form-product__text">L</span>
+								</label>
+								<label class="form-product__label">
+									<input type="radio" name="size" value="xl" class="form-product__size-radio">
+									<span class="form-product__text">XL</span>
+								</label>
+								<label class="form-product__label">
+									<input type="radio" name="size" value="xs" class="form-product__size-radio">
+									<span class="form-product__text">XS</span>
+								</label>
+							</div>
+						</div>
+						<div class="form-product__item">
+							<span class="form-product__title">Color</span>
+							<div class="form-product__colors">
+								<label class="form-product__label">
+									<input type="radio" name="color" value="purple" class="form-product__color-radio" checked>
+									<span class="form-product__color-circle form-product__color-circle--purple"></span>
+								</label>
+								<label class="form-product__label">
+									<input type="radio" name="color" value="black" class="form-product__color-radio">
+									<span class="form-product__color-circle form-product__color-circle--black"></span>
+								</label>
+								<label class="form-product__label">
+									<input type="radio" name="color" value="orange" class="form-product__color-radio">
+									<span class="form-product__color-circle form-product__color-circle--orange"></span>
+								</label>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+
+		</footer>
+	</div>
+</body>
+
+</html>
