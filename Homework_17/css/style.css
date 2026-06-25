@@ -1,0 +1,316 @@
+
+/* Локальне підключення шрифтів */
+/* @import url("fonts.css"); */
+
+/* Підключення віддалених шрифтів */
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700&display=swap"); */
+
+/* Значення за замовченням  */
+body {
+	font-family: "Barlow", sans-serif;
+	background-color: #030303;
+	color: #fdfdf7;
+}
+/* ------------------------------------------------------------------- */
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main {
+	flex-grow: 1;
+}
+[class*="--margin"] {
+	margin-bottom: 50px;
+}
+/* ------------------------------------------------------------------- */
+[class*="__container"] {
+	max-width: 1290px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+/* ------------------------------------------------------------------- */
+
+.page {
+	padding-block: 30px;
+}
+
+/* ------------------------------------------------------------------- */
+.header__title{
+	font-family: "Poppins", sans-serif;
+   font-size: 30px;
+   font-weight: 700;
+   color: #fdfdf7;
+   text-align: center;
+}
+.header{
+	background-color: #030303;
+	padding: 30px 0;
+	width: 100%;
+	height: 100%;
+   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	box-shadow: inset 0 -5px 10px rgba(255, 255, 255, 0.352);
+}
+.header {
+	position: sticky;
+	top: 0;
+	z-index: 50;
+}
+
+/* homework 17 */
+/* ------------------------------------------------------------------- */
+/* statistics */
+.statistic__container {
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+	overflow-x: auto;
+	margin-bottom: 66px;
+}
+.statistic__item { 
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex: 1 1 240px;
+	max-width: 280px;
+	height: 125px;
+	background-color: #1A1A1A;
+	border-radius: 12px;
+	padding: 16px;
+	text-align: center;
+}
+.statistic__item-title { 
+	text-transform: uppercase;
+	font-family: "Roboto Mono", monospace;
+	font-size: 14px;
+	color: #B3B3B2;
+	line-height: 1.5;
+	font-weight: 500;
+	transition: transform 0.3s ease;
+}
+.statistic__item-value { 
+	font-family: "Roboto Mono", monospace;
+	font-size: 40px;
+	font-weight: 600;
+	color: #C8C8C8;
+	line-height: 1.5;
+	transition: transform 0.3s ease;
+}
+.statistic__item:hover .statistic__item-title {
+   transform: scale(1.2); 
+	color: #ffffff;
+}
+.statistic__item:hover .statistic__item-value {
+   transform: scale(1.08); 
+}
+@media (width <= 830px) {
+   .statistic__container {
+      flex-wrap: nowrap;
+		justify-content: flex-start;
+      overflow-x: auto;
+		gap: 20px;
+   }
+   .statistic__item {
+      flex-shrink: 0;
+   }
+}
+/* ------------------------------------------------------------------- */
+/* information */
+.information { 
+	/* background-image: radial-gradient(rgba(255, 255, 255, 0.15) 0.9px, transparent 0.9px);
+	background-size: 8px 8px; */
+	padding: 46px 0;
+	margin-bottom: 90px;
+	position: relative;
+}
+.information::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   width: 100vw;
+   left: 50%;
+   transform: translateX(-50%);
+   z-index: -1; 
+   background-image: radial-gradient(rgba(255, 255, 255, 0.15) 0.9px, transparent 0.9px);
+   background-size: 8px 8px;
+   background-color: #030303;
+}
+.information__container {
+	font-family: "Barlow", sans-serif;
+	margin: 0 46px;
+}
+.information__row {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 60px;
+	align-items: center;
+}
+.information__row:not(:last-child) {
+   margin-bottom: 120px;
+}
+.information__row:nth-child(2) {
+   direction: rtl; 
+	text-align: left;
+}
+.information__title { 
+	font-size: 24px;
+	font-weight: 600;
+	margin-bottom: 24px;
+}
+.information__desc { 
+	margin-bottom: 16px;
+}
+.information__media { 
+	width: 100%;
+}
+.information__img { 
+	max-width: 100%;
+	height: auto;
+	display: block;
+	justify-self: center; 
+}
+@media (width <= 950px) {
+	.information__row {
+      grid-template-columns: 1fr;
+      gap: 40px;
+      margin-bottom: 0px;
+   }
+	.information__content {
+      text-align: center;
+		text-wrap: balance;
+   }
+	.information{
+		margin-bottom: 30px;
+	}
+}
+/* ------------------------------------------------------------------- */
+/* expertise */
+.expertise__container { 
+	font-family: "Roboto Mono", monospace;
+	margin-bottom: 100px;
+}
+.expertise__title{
+	margin-bottom: 50px;
+}
+.page-title { 
+	font-family: "Barlow", sans-serif;
+	font-size: 36px;
+	font-weight: 600;
+	text-align: center;
+}
+.expertise__block { 
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 10px;
+	align-items: start;
+	grid-template-rows: auto auto 1fr;
+}
+.card-expertise { 
+	display: grid;
+   background-color: #1F1F1F; 
+	border-radius: 12px;
+	overflow: hidden;
+	display: grid;
+	grid-template-rows: auto auto 1fr;
+	text-wrap: balance;
+	grid-row: span 3;
+	grid-template-rows: subgrid;
+}
+.card-expertise__title { 
+	grid-row: 1;
+	color: #81807E;
+	padding: 12px 24px;
+	transition: transform 0.4s ease;
+}
+.card-expertise__media { 
+	grid-row: 2;
+	background-color: #262626;
+	padding: 32px 24px;
+	display: grid;
+	place-items: center;
+	height: 185px;
+}
+.card-expertise__img {
+	transition: transform 0.4s ease;
+}
+.card-expertise__img:hover{
+   transform: scale(1.2); 
+}
+.card-expertise__desc { 
+	color: #B3B3B2;
+	padding: 24px 24px;
+	line-height: 1.5;
+}
+@media (width <= 1090px) {
+   .expertise__block {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 20px;
+	}
+}
+@media (width <= 700px) {
+	.expertise__block {
+      grid-template-columns: 1fr;
+   }
+}
+/* ------------------------------------------------------------------- */
+/* Our Track Record */
+.record__container { 
+	font-family: "Barlow", sans-serif;
+}
+.record__title { 
+	margin-bottom: 50px;
+}
+.record__block { 
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 27px;
+	align-items: stretch;
+}
+.track-card:hover {
+	transform: scale(1.02);
+	box-shadow: 0px 4px 10px rgba(255, 254, 254, 0.581), 0px -4px 10px rgba(255, 254, 254, 0.581);
+}
+.track-card { 
+	display: grid;
+	background-color: #141414;
+	border-radius: 36px;
+	text-wrap: balance;
+	transition: transform 0.4s ease, box-shadow 0.8s ease;
+}
+.track-card__value { 
+	font-size: 64px;
+	line-height: 0.8;
+	font-weight: 900;
+	padding: 32px  0 42px 0;
+	text-align: center;
+   text-shadow: 0px 4px 4px rgba(151, 142, 142, 0.581);
+}
+.track-card__title { 
+   font-size: 20px;
+	font-weight: 600;
+	padding-bottom: 16px;
+	text-align: center;
+}
+.track-card__desc { 
+	line-height: 0.8;
+	padding: 0 14px 42px 14px;
+	text-align: center;
+	line-height: 1.2;
+}
+@media (width <= 1090px) {
+   .record__block {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 20px;
+	}
+}
+@media (width <= 700px) {
+	.record__block {
+      grid-template-columns: 1fr;
+   }
+}
+
+transition: transform 0.4s ease;
