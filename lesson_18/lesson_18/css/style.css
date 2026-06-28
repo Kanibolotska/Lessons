@@ -1,0 +1,68 @@
+/* @import url("reset.css"); */
+
+/* @import url("components.css");
+@import url("header.css"); */
+
+/* Локальне підключення шрифтів */
+/* @import url("fonts.css"); */
+
+/* Підключення віддалених шрифтів */
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700&display=swap"); */
+
+/* Значення за замовченням  */
+body {
+	font-family: "Inter", sans-serif;
+	color: #fff;
+	background-color: #333;
+}
+/* ------------------------------------------------------------------- */
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main {
+	flex-grow: 1;
+}
+[class*="--margin"] {
+	margin-bottom: 50px;
+}
+/* ------------------------------------------------------------------- */
+[class*="__container"] {
+	max-width: 1360px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+/* ------------------------------------------------------------------- */
+
+.page {
+	padding-block: 30px;
+}
+
+.table-home {
+}
+
+.table {
+	width: 100%;
+	border-collapse: collapse;
+}
+.table__header {
+}
+.table__title {
+}
+.table__row {
+}
+.table__item {
+}
+
+@media (width < 900px) {
+	.table {
+		width: 900px;
+	}
+	.table-home {
+		overflow: auto;
+	}
+}
